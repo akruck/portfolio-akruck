@@ -1,5 +1,8 @@
-h1 {
-  color: #5A1E30; }
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
 
 @font-face {
   font-family: "exo-2--thin";
