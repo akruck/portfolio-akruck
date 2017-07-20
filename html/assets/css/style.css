@@ -1,8 +1,9 @@
+html {
+  height: 100%; }
+
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%; }
+  min-height: 100%;
+  overflow: hidden; }
 
 @font-face {
   font-family: "exo-2--thin";
@@ -36,3 +37,6 @@ body {
 
 h1, h2 {
   font-family: exo-2--black, sans-serif; }
+
+.cover {
+  background-color: #5A1E30; }
