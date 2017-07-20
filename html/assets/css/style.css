@@ -1,4 +1,5 @@
 html {
+  background-color: #201E22;
   height: 100%; }
 
 body {
@@ -6,37 +7,78 @@ body {
   overflow: hidden; }
 
 @font-face {
-  font-family: "exo-2--thin";
+  font-family: "exo-2";
+  font-weight: 100;
   src: url("../fonts/Exo_2/Exo2-Thin.eot");
   src: url("../fonts/Exo_2/Exo2-Thin.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Thin.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Thin.woff") format("woff"), url("../fonts/Exo_2/Exo2-Thin.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "exo-2--light";
+  font-family: "exo-2";
+  font-weight: 200;
   src: url("../fonts/Exo_2/Exo2-Light.eot");
   src: url("../fonts/Exo_2/Exo2-Light.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Light.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Light.woff") format("woff"), url("../fonts/Exo_2/Exo2-Light.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "exo-2--regular";
+  font-family: "exo-2";
+  font-weight: normal;
   src: url("../fonts/Exo_2/Exo2-Regular.eot");
   src: url("../fonts/Exo_2/Exo2-Regular.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Regular.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Regular.woff") format("woff"), url("../fonts/Exo_2/Exo2-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "exo-2--medium";
+  font-family: "exo-2";
+  font-weight: 500;
   src: url("../fonts/Exo_2/Exo2-Medium.eot");
   src: url("../fonts/Exo_2/Exo2-Medium.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Medium.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Medium.woff") format("woff"), url("../fonts/Exo_2/Exo2-Medium.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "exo-2--bold";
+  font-family: "600";
+  font-weight: bolder;
   src: url("../fonts/Exo_2/Exo2-Bold.eot");
   src: url("../fonts/Exo_2/Exo2-Bold.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Bold.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Bold.woff") format("woff"), url("../fonts/Exo_2/Exo2-Bold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "exo-2--black";
+  font-family: "exo-2";
+  font-weight: 800;
   src: url("../fonts/Exo_2/Exo2-Black.eot");
   src: url("../fonts/Exo_2/Exo2-Black.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Black.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Black.woff") format("woff"), url("../fonts/Exo_2/Exo2-Black.ttf") format("truetype"); }
 
-h1, h2 {
-  font-family: exo-2--black, sans-serif; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: exo-2, sans-serif;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5vw; }
 
 .cover {
-  background-color: #5A1E30; }
+  background: #201E22;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #201E22 0%, #5A1E30 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #201E22 0%, #5A1E30 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #201E22 0%, #5A1E30 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$grey--darker', endColorstr='$purple-red',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  height: 100vh;
+  padding: 20vh 12vw 12vh 8vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%; }
+  .cover__hero {
+    color: #C1A991;
+    text-transform: uppercase; }
+    .cover__hero h1, .cover__hero h2, .cover__hero h3 {
+      line-height: 1.3em; }
+    .cover__hero h1 {
+      font-size: 6vh;
+      font-weight: 100; }
+    .cover__hero h2 {
+      font-size: 3.6vh;
+      font-weight: 200;
+      padding-top: 2.4vh; }
+    .cover__hero h3 {
+      font-size: 2.4vh;
+      font-weight: 200; }
+  .cover__period--from h1, .cover__period--to h1 {
+    color: #BEAB43;
+    font-size: 8vh; }

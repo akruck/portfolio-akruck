@@ -1,33 +1,42 @@
 @font-face {
-  font-family: "exo-2--thin";
+  font-family: "exo-2";
+  font-weight: 100;
   src: url("../fonts/Exo_2/Exo2-Thin.eot");
   src: url("../fonts/Exo_2/Exo2-Thin.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Thin.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Thin.woff") format("woff"), url("../fonts/Exo_2/Exo2-Thin.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "exo-2--light";
+  font-family: "exo-2";
+  font-weight: 200;
   src: url("../fonts/Exo_2/Exo2-Light.eot");
   src: url("../fonts/Exo_2/Exo2-Light.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Light.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Light.woff") format("woff"), url("../fonts/Exo_2/Exo2-Light.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "exo-2--regular";
+  font-family: "exo-2";
+  font-weight: normal;
   src: url("../fonts/Exo_2/Exo2-Regular.eot");
   src: url("../fonts/Exo_2/Exo2-Regular.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Regular.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Regular.woff") format("woff"), url("../fonts/Exo_2/Exo2-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "exo-2--medium";
+  font-family: "exo-2";
+  font-weight: 500;
   src: url("../fonts/Exo_2/Exo2-Medium.eot");
   src: url("../fonts/Exo_2/Exo2-Medium.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Medium.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Medium.woff") format("woff"), url("../fonts/Exo_2/Exo2-Medium.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "exo-2--bold";
+  font-family: "600";
+  font-weight: bolder;
   src: url("../fonts/Exo_2/Exo2-Bold.eot");
   src: url("../fonts/Exo_2/Exo2-Bold.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Bold.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Bold.woff") format("woff"), url("../fonts/Exo_2/Exo2-Bold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "exo-2--black";
+  font-family: "exo-2";
+  font-weight: 800;
   src: url("../fonts/Exo_2/Exo2-Black.eot");
   src: url("../fonts/Exo_2/Exo2-Black.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Black.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Black.woff") format("woff"), url("../fonts/Exo_2/Exo2-Black.ttf") format("truetype"); }
 
-h1, h2 {
- font-family: exo-2--black, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+ font-family: exo-2, sans-serif;
+ margin: 0;
+ padding: 0;
+ letter-spacing: 0.5vw;
 }
