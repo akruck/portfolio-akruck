@@ -62,38 +62,3 @@
   }
  }
 }
-.hexagon {
- cursor: pointer;
- position: relative;
- width: 12vw;
- height: 6.928vw;
- background-color: transparent;
- margin: 3.464vw 0;
- border-left: solid 1px $sand;
- border-right: solid 1px $sand;
- transform: rotate(30deg);
-
- &:before,
- &:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 8.485vw;
-  height: 8.485vw;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 1.65736vw;
- }
- &:before {
-  top: -4.24264vw;
-  border-top: solid 1.4142px $sand;
-  border-right: solid 1.4142px $sand;
- }
- &:after {
-  bottom: -4.24264vw;
-  border-bottom: solid 1.4142px $sand;
-  border-left: solid 1.4142px $sand;
- }
-}

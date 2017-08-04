@@ -47,6 +47,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
+.button-hexagon {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  height: 16vh;
+  width: 16vh; }
+  .button-hexagon:focus {
+    border: none; }
+  .button-hexagon__svg {
+    fill: #000000; }
+  .button-hexagon__polygon {
+    cursor: pointer;
+    fill-opacity: 0;
+    stroke: #C1A991;
+    stroke-width: 1; }
+
 .cover {
   background: #201E22;
   /* Old browsers */
@@ -95,33 +111,3 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right; }
   .cover__period--to {
     text-align: left; }
-
-.hexagon {
-  cursor: pointer;
-  position: relative;
-  width: 12vw;
-  height: 6.928vw;
-  background-color: transparent;
-  margin: 3.464vw 0;
-  border-left: solid 1px #C1A991;
-  border-right: solid 1px #C1A991;
-  transform: rotate(30deg); }
-  .hexagon:before, .hexagon:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 8.485vw;
-    height: 8.485vw;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background-color: inherit;
-    left: 1.65736vw; }
-  .hexagon:before {
-    top: -4.24264vw;
-    border-top: solid 1.4142px #C1A991;
-    border-right: solid 1.4142px #C1A991; }
-  .hexagon:after {
-    bottom: -4.24264vw;
-    border-bottom: solid 1.4142px #C1A991;
-    border-left: solid 1.4142px #C1A991; }

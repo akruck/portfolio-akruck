@@ -1,0 +1,21 @@
+.button-hexagon {
+ background-color: transparent;
+ border: none;
+ display: inline-block;
+ height: 16vh;
+ width: 16vh;
+
+&:focus {
+ border: none;
+}
+
+ &__svg {
+  fill: #000000;
+ }
+ &__polygon {
+  cursor: pointer;
+  fill-opacity: 0;
+  stroke: $sand;
+  stroke-width: 1;
+ }
+}
