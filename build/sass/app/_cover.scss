@@ -15,40 +15,50 @@
  &__hero {
   color: $sand;
   text-transform: uppercase;
-  padding-bottom: 10vh;
+  padding-bottom: 4vh;
 
   h1, h2, h3 {
    line-height: 1.3em;
   }
 
   h1 {
-   font-size: 6vh;
+   font-size: 12vw;
    font-weight: 100;
   }
 
   h2 {
-   font-size: 3.6vh;
+   font-size: 7.2vw;
    font-weight: 200;
    padding-top: 2.4vh;
   }
 
   h3 {
-   font-size: 2.4vh;
+   font-size: 4.8vw;
    font-weight: 200;
+  }
+ }
+ h2.headline {
+  &--company {
+   color: $apple-green;
+   display: block;
+   font-size: 4.8vw;
+   font-weight: 200;
+   padding-top: 2.4vh;
   }
  }
  &__period {
   &--from, &--to {
    display: inline-block;
-   padding-right: 8vw;
+   padding-right: 4vw;
    h1 {
+    display: inline-block;
     color: $apple-green;
-    font-size: 16vh;
+    font-size: 24vw;
     font-weight: 100;
    }
    h2 {
     color: $apple-green;
-    font-size: 2.4vh;
+    font-size: 4.8vw;
     font-weight: 200;
     text-transform: uppercase;
    }

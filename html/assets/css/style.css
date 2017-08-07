@@ -81,29 +81,36 @@ h1, h2, h3, h4, h5, h6 {
   .cover__hero {
     color: #C1A991;
     text-transform: uppercase;
-    padding-bottom: 10vh; }
+    padding-bottom: 4vh; }
     .cover__hero h1, .cover__hero h2, .cover__hero h3 {
       line-height: 1.3em; }
     .cover__hero h1 {
-      font-size: 6vh;
+      font-size: 12vw;
       font-weight: 100; }
     .cover__hero h2 {
-      font-size: 3.6vh;
+      font-size: 7.2vw;
       font-weight: 200;
       padding-top: 2.4vh; }
     .cover__hero h3 {
-      font-size: 2.4vh;
+      font-size: 4.8vw;
       font-weight: 200; }
+  .cover h2.headline--company {
+    color: #BEAB43;
+    display: block;
+    font-size: 4.8vw;
+    font-weight: 200;
+    padding-top: 2.4vh; }
   .cover__period--from, .cover__period--to {
     display: inline-block;
-    padding-right: 8vw; }
+    padding-right: 4vw; }
     .cover__period--from h1, .cover__period--to h1 {
+      display: inline-block;
       color: #BEAB43;
-      font-size: 16vh;
+      font-size: 24vw;
       font-weight: 100; }
     .cover__period--from h2, .cover__period--to h2 {
       color: #BEAB43;
-      font-size: 2.4vh;
+      font-size: 4.8vw;
       font-weight: 200;
       text-transform: uppercase; }
   .cover__period--from {
