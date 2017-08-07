@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$grey--darker', endColorstr='$purple-red',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
   height: 100vh;
-  padding: 20vh 12vw 12vh 16vw;
+  padding: 12vh 12vw 12vh 16vw;
   overflow-x: hidden;
   overflow-y: auto; }
   .cover__hero {
@@ -117,3 +117,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right; }
   .cover__period--to {
     text-align: left; }
+  .cover .toolbar {
+    padding-top: 8vh;
+    text-align: right; }

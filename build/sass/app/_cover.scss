@@ -8,7 +8,7 @@
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$grey--darker', endColorstr='$purple-red',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
  height: 100vh;
- padding: 20vh 12vw 12vh 16vw;
+ padding: 12vh 12vw 12vh 16vw;
  overflow-x: hidden;
  overflow-y: auto;
 
@@ -69,5 +69,9 @@
   &--to {
    text-align: left;
   }
+ }
+ .toolbar {
+  padding-top: 8vh;
+  text-align: right;
  }
 }
