@@ -1,5 +1,7 @@
 // cover
 // ---------- ---------- ---------- ---------- ----------
+
+// general rules
 .cover {
  background: $grey--darker; /* Old browsers */
  background: -moz-linear-gradient(45deg, $grey--darker 0%, $purple-red 100%); /* FF3.6-15 */
@@ -8,32 +10,26 @@
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$grey--darker', endColorstr='$purple-red',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
  height: 100vh;
- padding: 12vh 12vw 12vh 16vw;
  overflow-x: hidden;
  overflow-y: auto;
 
  &__hero {
   color: $sand;
   text-transform: uppercase;
-  padding-bottom: 4vh;
 
   h1, h2, h3 {
    line-height: 1.3em;
   }
 
   h1 {
-   font-size: 12vw;
    font-weight: 100;
   }
 
   h2 {
-   font-size: 7.2vw;
    font-weight: 200;
-   padding-top: 2.4vh;
   }
 
   h3 {
-   font-size: 4.8vw;
    font-weight: 200;
   }
  }
@@ -41,24 +37,19 @@
   &--company {
    color: $apple-green;
    display: block;
-   font-size: 4.8vw;
    font-weight: 200;
-   padding-top: 2.4vh;
   }
  }
  &__period {
   &--from, &--to {
    display: inline-block;
-   padding-right: 4vw;
    h1 {
     display: inline-block;
     color: $apple-green;
-    font-size: 24vw;
     font-weight: 100;
    }
    h2 {
     color: $apple-green;
-    font-size: 4.8vw;
     font-weight: 200;
     text-transform: uppercase;
    }
@@ -71,7 +62,50 @@
   }
  }
  .toolbar {
-  padding-top: 8vh;
   text-align: right;
+ }
+}
+
+// rules for portrtait mode only
+@media (orientation: portrait) {
+ .cover {
+  padding: 12vh 12vw 12vh 16vw;
+
+  &__hero {
+   padding-bottom: 4vh;
+
+   h1 {
+    font-size: 12vw;
+   }
+
+   h2 {
+    font-size: 7.2vw;
+    padding-top: 2.4vh;
+   }
+
+   h3 {
+    font-size: 4.8vw;
+   }
+  }
+  h2.headline {
+   &--company {
+    font-size: 4.8vw;
+    padding-top: 2.4vh;
+   }
+  }
+  &__period {
+   &--from, &--to {
+    padding-right: 4vw;
+    h1 {
+     font-size: 24vw;
+    }
+    h2 {
+     font-size: 4.8vw;
+    }
+   }
+  }
+  .toolbar {
+   padding-top: 8vh;
+  }
  }
 }

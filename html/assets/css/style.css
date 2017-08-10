@@ -79,42 +79,31 @@ h1, h2, h3, h4, h5, h6 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$grey--darker', endColorstr='$purple-red',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
   height: 100vh;
-  padding: 12vh 12vw 12vh 16vw;
   overflow-x: hidden;
   overflow-y: auto; }
   .cover__hero {
     color: #C1A991;
-    text-transform: uppercase;
-    padding-bottom: 4vh; }
+    text-transform: uppercase; }
     .cover__hero h1, .cover__hero h2, .cover__hero h3 {
       line-height: 1.3em; }
     .cover__hero h1 {
-      font-size: 12vw;
       font-weight: 100; }
     .cover__hero h2 {
-      font-size: 7.2vw;
-      font-weight: 200;
-      padding-top: 2.4vh; }
+      font-weight: 200; }
     .cover__hero h3 {
-      font-size: 4.8vw;
       font-weight: 200; }
   .cover h2.headline--company {
     color: #BEAB43;
     display: block;
-    font-size: 4.8vw;
-    font-weight: 200;
-    padding-top: 2.4vh; }
+    font-weight: 200; }
   .cover__period--from, .cover__period--to {
-    display: inline-block;
-    padding-right: 4vw; }
+    display: inline-block; }
     .cover__period--from h1, .cover__period--to h1 {
       display: inline-block;
       color: #BEAB43;
-      font-size: 24vw;
       font-weight: 100; }
     .cover__period--from h2, .cover__period--to h2 {
       color: #BEAB43;
-      font-size: 4.8vw;
       font-weight: 200;
       text-transform: uppercase; }
   .cover__period--from {
@@ -122,5 +111,28 @@ h1, h2, h3, h4, h5, h6 {
   .cover__period--to {
     text-align: left; }
   .cover .toolbar {
-    padding-top: 8vh;
     text-align: right; }
+
+@media (orientation: portrait) {
+  .cover {
+    padding: 12vh 12vw 12vh 16vw; }
+    .cover__hero {
+      padding-bottom: 4vh; }
+      .cover__hero h1 {
+        font-size: 12vw; }
+      .cover__hero h2 {
+        font-size: 7.2vw;
+        padding-top: 2.4vh; }
+      .cover__hero h3 {
+        font-size: 4.8vw; }
+    .cover h2.headline--company {
+      font-size: 4.8vw;
+      padding-top: 2.4vh; }
+    .cover__period--from, .cover__period--to {
+      padding-right: 4vw; }
+      .cover__period--from h1, .cover__period--to h1 {
+        font-size: 24vw; }
+      .cover__period--from h2, .cover__period--to h2 {
+        font-size: 4.8vw; }
+    .cover .toolbar {
+      padding-top: 8vh; } }
