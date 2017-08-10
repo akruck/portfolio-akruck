@@ -16,6 +16,11 @@
   cursor: pointer;
   fill-opacity: 0;
   stroke: $sand;
-  stroke-width: 2;
+  stroke-width: 4;
+ }
+ &__arrow {
+  fill-opacity: 1;
+  fill: $sand;
+  stroke-width: 0;
  }
 }

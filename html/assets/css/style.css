@@ -61,7 +61,11 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     fill-opacity: 0;
     stroke: #C1A991;
-    stroke-width: 2; }
+    stroke-width: 4; }
+  .button-hexagon__arrow {
+    fill-opacity: 1;
+    fill: #C1A991;
+    stroke-width: 0; }
 
 .cover {
   background: #201E22;
