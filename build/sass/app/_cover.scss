@@ -18,7 +18,7 @@
   text-transform: uppercase;
 
   h1, h2, h3 {
-   line-height: 1.3em;
+   line-height: 1.32em;
   }
 
   h1 {
@@ -38,6 +38,7 @@
    color: $apple-green;
    display: block;
    font-weight: 200;
+   text-transform: uppercase;
   }
  }
  &__period {
@@ -62,6 +63,7 @@
   }
  }
  .toolbar {
+  position: fixed;
   text-align: right;
  }
 }
@@ -79,17 +81,17 @@
    }
 
    h2 {
-    font-size: 7.2vw;
+    font-size: 6.4vw;
     padding-top: 2.4vh;
    }
 
    h3 {
-    font-size: 4.8vw;
+    font-size: 4vw;
    }
   }
   h2.headline {
    &--company {
-    font-size: 4.8vw;
+    font-size: 4vw;
     padding-top: 2.4vh;
    }
   }
@@ -97,15 +99,16 @@
    &--from, &--to {
     padding-right: 4vw;
     h1 {
-     font-size: 24vw;
+     font-size: 20vw;
     }
     h2 {
-     font-size: 4.8vw;
+     font-size: 4vw;
     }
    }
   }
   .toolbar {
-   padding-top: 8vh;
+   bottom: 4vh;
+   right: 4vh;
   }
  }
 }

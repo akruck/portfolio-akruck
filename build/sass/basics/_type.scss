@@ -33,9 +33,10 @@
   font-weight: 800;
   src: url("../fonts/Exo_2/Exo2-Black.eot");
   src: url("../fonts/Exo_2/Exo2-Black.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Black.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Black.woff") format("woff"), url("../fonts/Exo_2/Exo2-Black.ttf") format("truetype"); }
-
+* {
+   font-family: exo-2, sans-serif;
+  }
 h1, h2, h3, h4, h5, h6 {
- font-family: exo-2, sans-serif;
  margin: 0;
  padding: 0;
 }

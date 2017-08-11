@@ -42,8 +42,10 @@ body {
   src: url("../fonts/Exo_2/Exo2-Black.eot");
   src: url("../fonts/Exo_2/Exo2-Black.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Black.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Black.woff") format("woff"), url("../fonts/Exo_2/Exo2-Black.ttf") format("truetype"); }
 
+* {
+  font-family: exo-2, sans-serif; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: exo-2, sans-serif;
   margin: 0;
   padding: 0; }
 
@@ -62,16 +64,31 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     fill-opacity: 0;
     stroke: #C1A991;
-    stroke-width: 4; }
+    stroke-width: 1; }
   .button-hexagon__arrow {
-    fill-opacity: 1;
+    cursor: pointer;
+    fill-opacity: 0.4;
     fill: #C1A991;
     stroke-width: 0; }
   .button-hexagon__text {
-    color: #F0E0D3;
+    cursor: pointer;
+    color: #C1A991;
     font-weight: 200;
     position: absolute;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 4vh;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    top: 6vh;
+    font-size: 1.6vh;
+    letter-spacing: 0.2vh; }
+  .button-hexagon:hover .button-hexagon__polygon {
+    stroke-width: 2;
+    stroke: #F0E0D3; }
+  .button-hexagon:hover .button-hexagon__arrow {
+    fill-opacity: 0.8; }
 
 .cover {
   background: #201E22;
@@ -91,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #C1A991;
     text-transform: uppercase; }
     .cover__hero h1, .cover__hero h2, .cover__hero h3 {
-      line-height: 1.3em; }
+      line-height: 1.32em; }
     .cover__hero h1 {
       font-weight: 100; }
     .cover__hero h2 {
@@ -101,7 +118,8 @@ h1, h2, h3, h4, h5, h6 {
   .cover h2.headline--company {
     color: #BEAB43;
     display: block;
-    font-weight: 200; }
+    font-weight: 200;
+    text-transform: uppercase; }
   .cover__period--from, .cover__period--to {
     display: inline-block; }
     .cover__period--from h1, .cover__period--to h1 {
@@ -117,6 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   .cover__period--to {
     text-align: left; }
   .cover .toolbar {
+    position: fixed;
     text-align: right; }
 
 @media (orientation: portrait) {
@@ -127,18 +146,19 @@ h1, h2, h3, h4, h5, h6 {
       .cover__hero h1 {
         font-size: 12vw; }
       .cover__hero h2 {
-        font-size: 7.2vw;
+        font-size: 6.4vw;
         padding-top: 2.4vh; }
       .cover__hero h3 {
-        font-size: 4.8vw; }
+        font-size: 4vw; }
     .cover h2.headline--company {
-      font-size: 4.8vw;
+      font-size: 4vw;
       padding-top: 2.4vh; }
     .cover__period--from, .cover__period--to {
       padding-right: 4vw; }
       .cover__period--from h1, .cover__period--to h1 {
-        font-size: 24vw; }
+        font-size: 20vw; }
       .cover__period--from h2, .cover__period--to h2 {
-        font-size: 4.8vw; }
+        font-size: 4vw; }
     .cover .toolbar {
-      padding-top: 8vh; } }
+      bottom: 4vh;
+      right: 4vh; } }

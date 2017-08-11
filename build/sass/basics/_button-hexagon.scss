@@ -17,17 +17,38 @@
   cursor: pointer;
   fill-opacity: 0;
   stroke: $sand;
-  stroke-width: 4;
+  stroke-width: 1;
  }
  &__arrow {
-  fill-opacity: 1;
+  cursor: pointer;
+  fill-opacity: 0.4;
   fill: $sand;
   stroke-width: 0;
  }
  &__text {
-  color: $skin--light;
+  cursor: pointer;
+  color: $sand;
   font-weight: 200;
   position: absolute;
   text-transform: uppercase;
+  line-height: 4vh;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 6vh;
+  font-size: 1.6vh;
+  letter-spacing: 0.2vh;
+ }
+ &:hover {
+  .button-hexagon {
+   &__polygon {
+    stroke-width: 2;
+    stroke: $skin--light;
+   }
+   &__arrow {
+    fill-opacity: 0.8;
+   }
+  }
  }
 }
