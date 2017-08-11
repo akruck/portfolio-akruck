@@ -3,6 +3,7 @@
  border: none;
  display: inline-block;
  height: 16vh;
+ position: relative;
  width: 16vh;
 
 &:focus {
@@ -22,5 +23,11 @@
   fill-opacity: 1;
   fill: $sand;
   stroke-width: 0;
+ }
+ &__text {
+  color: $skin--light;
+  font-weight: 200;
+  position: absolute;
+  text-transform: uppercase;
  }
 }

@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   display: inline-block;
   height: 16vh;
+  position: relative;
   width: 16vh; }
   .button-hexagon:focus {
     border: none; }
@@ -66,6 +67,11 @@ h1, h2, h3, h4, h5, h6 {
     fill-opacity: 1;
     fill: #C1A991;
     stroke-width: 0; }
+  .button-hexagon__text {
+    color: #F0E0D3;
+    font-weight: 200;
+    position: absolute;
+    text-transform: uppercase; }
 
 .cover {
   background: #201E22;
