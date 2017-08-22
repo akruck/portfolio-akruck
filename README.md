@@ -1,2 +1,2 @@
-# AB Portfolio Alexander Kruck-Kneip
+# Portfolio Alexander Kruck-Kneip
 ## Coming soon
