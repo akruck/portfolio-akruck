@@ -1,4 +1,2 @@
-# AB Sandbox
-### Based on rc-gulp-icon-create.git
----
+# AB Portfolio Alexander Kruck-Kneip
 ## Coming soon
