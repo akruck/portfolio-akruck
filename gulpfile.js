@@ -1,78 +1,66 @@
 // variables
 //-------------------------------------------------
 var basePaths = {
-	src: 'build/',
-	dest: 'html/assets/',
+ src: 'build/',
+ dest: 'html/assets/',
 };
 var paths = {
-	sass: {
-		src: basePaths.src + 'sass/**/*.scss',
-		dest: basePaths.dest + 'css/'
-	},
-	html: {
-		src: 'html/*.html' && 'html/app/basics/*.html' && 'html/app/components/*.html'
-	}
+ sass: {
+  src: basePaths.src + 'sass/**/*.scss',
+  dest: basePaths.dest + 'css/'
+ },
+ html: {
+  src: 'html/*.html' && 'html/app/foundations/*.html' && 'html/app/components/*.html'
+ }
 };
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
-var $ = { sass: require('gulp-sass'), }
-var iconfont = require('gulp-iconfont');
-var iconfontCss = require('gulp-iconfont-css');
+var $ = {
+ sass: require('gulp-sass'),
+}
+
+// var to create svg sprite
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
+var path = require('path');
+var inject = require('gulp-inject');
 var ttf2woff = require('gulp-ttf2woff');
 
 
-// generate icon font icons outline
+// generate icon svg sprite
 //-------------------------------------------------
 
-var fontNameIconsOutline = 'icons-outline';
+gulp.task('svgstore', function () {
+    var svgs = gulp
+        .src('build/sprite/*.svg')
+        .pipe(svgmin(function(file) {
+         return {
+          plugins: [{
+           cleanupIDs: {
+            minify: true
+           }
+          }]
+         }
+        }))
+        .pipe(svgstore({ inlineSvg: true }));
 
-gulp.task('icons-outline', function(){
-  gulp.src(['build/sprite/icons-outline/*.svg'])
-    .pipe(iconfontCss({
-      fontName: fontNameIconsOutline,
-			formats: ['ttf', 'eot'],
-      path: 'build/tpl/_icons-outline.scss',
-      targetPath: '../../../../build/sass/basics/_icons-outline.scss',
-      fontPath: '../fonts/icons/'
-    }))
-    .pipe(iconfont({
-      fontName:	fontNameIconsOutline,
-			appendCodepoints: true,
-			normalize:true,
-			fontHeight:512,
-      descent:    64
-     }))
-    .pipe(gulp.dest('html/assets/fonts/icons/'));
+    function fileContents (filePath, file) {
+        return file.contents.toString();
+    }
+
+    return gulp
+        .src('html/app/foundations/iconography.html')
+        .pipe(inject(svgs, { transform: fileContents }))
+        .pipe(gulp.dest('html/app/foundations/'));
 });
 
 
-// generate icon font icons solid
+// Create woff out of a ttf
 //-------------------------------------------------
-
-var fontNameIconsSolid = 'icons-solid';
-
-gulp.task('icons-solid', function(){
-  gulp.src(['build/sprite/icons-solid/*.svg'])
-    .pipe(iconfontCss({
-      fontName: fontNameIconsSolid,
-      path: 'build/tpl/_icons-solid.scss',
-      targetPath: '../../../../build/sass/basics/_icons-solid.scss',
-      fontPath: '../fonts/icons/'
-    }))
-    .pipe(iconfont({
-      fontName: fontNameIconsSolid
-     }))
-    .pipe(gulp.dest('html/assets/fonts/icons/'));
-});
-
-
-// generate icon font icons solid
-//-------------------------------------------------
-
 gulp.task('ttf2woff', function(){
-  gulp.src(['html/assets/fonts/icons/*.ttf'])
+  gulp.src(['html/assets/fonts/*.ttf'])
     .pipe(ttf2woff())
-    .pipe(gulp.dest('html/assets/fonts/icons/'));
+    .pipe(gulp.dest('html/assets/fonts/'));
 });
 
 
@@ -85,21 +73,23 @@ gulp.task('default', ['serve']);
 //-------------------------------------------------
 
 // Compile sass files
-gulp.task('sass', function () {
-	gulp.src(paths.sass.src)
-	.pipe($.sass({ includePaths : [paths.sass.src] }).on('error', $.sass.logError))
-	.pipe(gulp.dest(paths.sass.dest))
-	.pipe(browserSync.stream());
+gulp.task('sass', function() {
+ gulp.src(paths.sass.src)
+  .pipe($.sass({
+   includePaths: [paths.sass.src]
+  }).on('error', $.sass.logError))
+  .pipe(gulp.dest(paths.sass.dest))
+  .pipe(browserSync.stream());
 });
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
-    browserSync.init({
-        server: "./html"
-    });
+ browserSync.init({
+  server: "./html"
+ });
 
-	//if any scss changes, create create new sass
-    gulp.watch(paths.sass.src, ['sass']);
-    gulp.watch(paths.html.src).on('change', browserSync.reload);
+ //if any scss changes, create create new sass
+ gulp.watch(paths.sass.src, ['sass']);
+ gulp.watch(paths.html.src).on('change', browserSync.reload);
 });
