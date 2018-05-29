@@ -8,3 +8,16 @@ body {
   min-height: 100%;
   overflow: hidden;
 }
+.bg-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+
+  img {
+    min-height: 100vh;
+    min-width: auto;
+  }
+}
