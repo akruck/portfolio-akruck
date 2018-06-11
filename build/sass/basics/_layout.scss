@@ -15,6 +15,8 @@ body {
 
     background-image: url("/assets/img/bg-landing--retina.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     display: block;
     height: 100vh;
@@ -23,39 +25,33 @@ body {
     top: 0;
     width: 100vw;
   }
-  .bg-gradiant {
+  .bg-mask {
     background: #201e22;
     background: -moz-linear-gradient(45deg, #201e22 0%, #5a1e30 100%);
     background: -webkit-linear-gradient(45deg, #201e22 0%,#5a1e30 100%);
     background: linear-gradient(45deg, #201e22 0%,#5a1e30 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#201e22', endColorstr='#5a1e30',GradientType=1 );
-
-    content: "";
     display: block;
     height: 100vh;
     left: 0;
-    opacity: 0.9;
+    opacity: 0.95;
     position: fixed;
     top: 0;
     width: 100vw;
   }
-
-  .bg-image.clip {
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    animation: 5s poly infinite alternate ease-in-out;
-    margin: 1em auto;
-    display: block;
+  #bg-image {
+    mask-image: url(/assets/img/hexagon--black.svg);
+    mask-size: 100%;
   }
-  @keyframes poly {
-    from {
-        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    }
+  #mask--hexagon {
+    display: block;
+    fill: black;
+    height: 50vh;
+    left: 0;
+    mask: url(#bg-image);
+    position: fixed;
+    top: 0;
+    width: auto;
 
-    to {
-      -webkit-clip-path: polygon(44% 26%, 58% 38%, 58% 38%, 44% 81%, 44% 81%, 25% 49%);
-      clip-path: polygon(44% 26%, 58% 38%, 58% 38%, 44% 81%, 44% 81%, 25% 49%);
-    }
   }
 }
