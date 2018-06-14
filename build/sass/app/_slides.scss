@@ -1,0 +1,110 @@
+// layout slide-01 - landing
+// ---------- ---------- ---------- ---------- ----------
+
+.slide-01--landing {
+
+  // bg-image
+  .bg-image {
+    background-image: url("/assets/img/bg-landing--retina.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: block;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+  }
+  .bg-mask {
+    background: #201e22;
+    background: -moz-linear-gradient(45deg, #201e22 0%, #5a1e30 100%);
+    background: -webkit-linear-gradient(45deg, #201e22 0%,#5a1e30 100%);
+    background: linear-gradient(45deg, #201e22 0%,#5a1e30 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#201e22', endColorstr='#5a1e30',GradientType=1 );
+    display: block;
+    height: 100vh;
+    left: 0;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  #bg-mask {
+    mask-size: 100%;
+    mask: url(#mask);
+  }
+  #mask {
+    fill: gray;
+  }
+  #mask--hexagon {
+    display: block;
+    fill: black;
+    height: 50vh;
+    left: 0;
+    mask: url(#bg-image);
+    position: fixed;
+    top: 0;
+    width: auto;
+
+  }
+
+  // cover
+  .cover {
+    display: block;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    text-transform: uppercase;
+    top: 0;
+    width: 100vw;
+
+    &__hero {
+      bottom: 32vh;
+      color: $skin--light;
+      right: 48vw;
+      position: fixed;
+      text-align: left;
+
+      h1 {
+        font-size: 64px;
+        font-weight: 100;
+        margin: 1vh 0 1vh -0.4vw;
+      }
+      h3 {
+        font-size: 3.2vh;
+        font-weight: 200;
+      }
+    }
+    &__period {
+        bottom: 32vh;
+        color: $apple-green;
+        position: fixed;
+        text-align: left;
+
+        h1 {
+          font-size: 16vh;
+          font-weight: 400;
+        }
+        h3 {
+          font-size: 3.2vh;
+          font-weight: 200;
+          margin-left: 0.64vw;
+        }
+
+      &--from {
+        left: 56vw;
+      }
+      &--to {
+        left: 72vw;
+      }
+    }
+  }
+}
+
+
+// rules for portrtait mode only
+@media (orientation: portrait) {
+
+}
