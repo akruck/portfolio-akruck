@@ -116,23 +116,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   width: 100vw; }
 
-.slide-01--landing #bg-mask {
-  mask-size: 100%;
-  mask: url(#mask); }
-
-.slide-01--landing #mask {
-  fill: gray; }
-
-.slide-01--landing #mask--hexagon {
-  display: block;
-  fill: black;
-  height: 50vh;
-  left: 0;
-  mask: url(#bg-image);
-  position: fixed;
-  top: 0;
-  width: auto; }
-
 .slide-01--landing .cover {
   display: block;
   height: 100vh;
@@ -148,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     text-align: left; }
     .slide-01--landing .cover__hero h1 {
-      font-size: 64px;
+      font-size: 8vh;
       font-weight: 100;
       margin: 1vh 0 1vh -0.4vw; }
     .slide-01--landing .cover__hero h3 {
@@ -170,3 +153,21 @@ h1, h2, h3, h4, h5, h6 {
       left: 56vw; }
     .slide-01--landing .cover__period--to {
       left: 72vw; }
+
+@media (orientation: portrait) {
+  .slide-01--landing .cover__period {
+    bottom: 32vh;
+    color: #C14E34;
+    position: fixed;
+    text-align: left; }
+    .slide-01--landing .cover__period h1 {
+      font-size: 16vh;
+      font-weight: 400; }
+    .slide-01--landing .cover__period h3 {
+      font-size: 3.2vh;
+      font-weight: 200;
+      margin-left: 0.64vw; }
+    .slide-01--landing .cover__period--from {
+      left: 56vw; }
+    .slide-01--landing .cover__period--to {
+      left: 72vw; } }

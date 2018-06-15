@@ -31,24 +31,6 @@
     top: 0;
     width: 100vw;
   }
-  #bg-mask {
-    mask-size: 100%;
-    mask: url(#mask);
-  }
-  #mask {
-    fill: gray;
-  }
-  #mask--hexagon {
-    display: block;
-    fill: black;
-    height: 50vh;
-    left: 0;
-    mask: url(#bg-image);
-    position: fixed;
-    top: 0;
-    width: auto;
-
-  }
 
   // cover
   .cover {
@@ -68,7 +50,7 @@
       text-align: left;
 
       h1 {
-        font-size: 64px;
+        font-size: 8vh;
         font-weight: 100;
         margin: 1vh 0 1vh -0.4vw;
       }
@@ -106,5 +88,31 @@
 
 // rules for portrtait mode only
 @media (orientation: portrait) {
+  .slide-01--landing {
+    .cover {
+      &__period {
+          bottom: 32vh;
+          color: $orange--dark;
+          position: fixed;
+          text-align: left;
 
+          h1 {
+            font-size: 16vh;
+            font-weight: 400;
+          }
+          h3 {
+            font-size: 3.2vh;
+            font-weight: 200;
+            margin-left: 0.64vw;
+          }
+
+        &--from {
+          left: 56vw;
+        }
+        &--to {
+          left: 72vw;
+        }
+      }
+    }
+  }
 }
