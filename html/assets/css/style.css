@@ -155,19 +155,33 @@ h1, h2, h3, h4, h5, h6 {
       left: 72vw; }
 
 @media (orientation: portrait) {
+  .slide-01--landing .cover__hero {
+    bottom: 48vh;
+    color: #F0E0D3;
+    right: auto;
+    left: 8vw;
+    position: fixed;
+    text-align: left; }
+    .slide-01--landing .cover__hero h1 {
+      font-size: 12vw;
+      font-weight: 100;
+      margin: 1vh 0 1vh -0.4vw; }
+    .slide-01--landing .cover__hero h3 {
+      font-size: 4.8vw;
+      font-weight: 200; }
   .slide-01--landing .cover__period {
-    bottom: 32vh;
-    color: #C14E34;
+    bottom: 24vh;
+    color: #BEAB43;
     position: fixed;
     text-align: left; }
     .slide-01--landing .cover__period h1 {
-      font-size: 16vh;
+      font-size: 24vw;
       font-weight: 400; }
     .slide-01--landing .cover__period h3 {
-      font-size: 3.2vh;
+      font-size: 4.8vw;
       font-weight: 200;
       margin-left: 0.64vw; }
     .slide-01--landing .cover__period--from {
-      left: 56vw; }
+      left: 8vw; }
     .slide-01--landing .cover__period--to {
-      left: 72vw; } }
+      left: 42vw; } }

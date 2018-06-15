@@ -90,27 +90,46 @@
 @media (orientation: portrait) {
   .slide-01--landing {
     .cover {
+
+      &__hero {
+        bottom: 48vh;
+        color: $skin--light;
+        right: auto;
+        left: 8vw;
+        position: fixed;
+        text-align: left;
+
+        h1 {
+          font-size: 12vw;
+          font-weight: 100;
+          margin: 1vh 0 1vh -0.4vw;
+        }
+        h3 {
+          font-size: 4.8vw;
+          font-weight: 200;
+        }
+      }
       &__period {
-          bottom: 32vh;
-          color: $orange--dark;
+          bottom: 24vh;
+          color: $apple-green;
           position: fixed;
           text-align: left;
 
           h1 {
-            font-size: 16vh;
+            font-size: 24vw;
             font-weight: 400;
           }
           h3 {
-            font-size: 3.2vh;
+            font-size: 4.8vw;
             font-weight: 200;
             margin-left: 0.64vw;
           }
 
         &--from {
-          left: 56vw;
+          left: 8vw;
         }
         &--to {
-          left: 72vw;
+          left: 42vw;
         }
       }
     }
