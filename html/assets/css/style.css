@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   .slide-01--landing .cover__hero {
     bottom: 32vh;
     color: #F0E0D3;
-    right: 48vw;
+    left: 12vw;
     position: fixed;
     text-align: left; }
     .slide-01--landing .cover__hero h1 {
@@ -150,16 +150,43 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: 200;
       margin-left: 0.64vw; }
     .slide-01--landing .cover__period--from {
-      left: 56vw; }
+      left: 50vw; }
     .slide-01--landing .cover__period--to {
-      left: 72vw; }
+      left: 66vw; }
 
-@media (orientation: portrait) {
+@media (min-aspect-ratio: 2 / 3) and (max-aspect-ratio: 1 / 1) {
+  .slide-01--landing .cover__hero {
+    bottom: 48vh;
+    color: #F0E0D3; }
+    .slide-01--landing .cover__hero h1 {
+      font-size: 8vw;
+      font-weight: 100;
+      margin: 1vh 0 1vh -0.4vw; }
+    .slide-01--landing .cover__hero h3 {
+      font-size: 3.2vw;
+      font-weight: 200; }
+  .slide-01--landing .cover__period {
+    bottom: 24vh;
+    color: #D9BDAD;
+    position: fixed;
+    text-align: left; }
+    .slide-01--landing .cover__period h1 {
+      font-size: 16vw;
+      font-weight: 400;
+      margin-left: -0.64vw; }
+    .slide-01--landing .cover__period h3 {
+      font-size: 3.2vw;
+      font-weight: 200; }
+    .slide-01--landing .cover__period--from {
+      left: 12vw; }
+    .slide-01--landing .cover__period--to {
+      left: 36vw; } }
+
+@media (max-aspect-ratio: 2 / 3) {
   .slide-01--landing .cover__hero {
     bottom: 48vh;
     color: #F0E0D3;
-    right: auto;
-    left: 8vw;
+    left: 10vw;
     position: fixed;
     text-align: left; }
     .slide-01--landing .cover__hero h1 {
@@ -171,17 +198,17 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: 200; }
   .slide-01--landing .cover__period {
     bottom: 24vh;
-    color: #BEAB43;
+    color: #C14E34;
     position: fixed;
     text-align: left; }
     .slide-01--landing .cover__period h1 {
       font-size: 24vw;
-      font-weight: 400; }
+      font-weight: 400;
+      margin-left: -0.64vw; }
     .slide-01--landing .cover__period h3 {
       font-size: 4.8vw;
-      font-weight: 200;
-      margin-left: 0.64vw; }
+      font-weight: 200; }
     .slide-01--landing .cover__period--from {
-      left: 8vw; }
+      left: 10vw; }
     .slide-01--landing .cover__period--to {
       left: 42vw; } }

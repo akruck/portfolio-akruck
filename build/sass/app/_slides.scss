@@ -45,7 +45,7 @@
     &__hero {
       bottom: 32vh;
       color: $skin--light;
-      right: 48vw;
+      left: 12vw;
       position: fixed;
       text-align: left;
 
@@ -76,26 +76,66 @@
         }
 
       &--from {
-        left: 56vw;
+        left: 50vw;
       }
       &--to {
-        left: 72vw;
+        left: 66vw;
       }
     }
   }
-}
 
-
-// rules for portrtait mode only
-@media (orientation: portrait) {
-  .slide-01--landing {
+  // rules for aspect ratio min 2/3 and max 1/1
+  @media (min-aspect-ratio: 2/3) and (max-aspect-ratio: 1/1) {
     .cover {
 
       &__hero {
         bottom: 48vh;
         color: $skin--light;
-        right: auto;
-        left: 8vw;
+
+        h1 {
+          font-size: 8vw;
+          font-weight: 100;
+          margin: 1vh 0 1vh -0.4vw;
+        }
+        h3 {
+          font-size: 3.2vw;
+          font-weight: 200;
+        }
+      }
+      &__period {
+        bottom: 24vh;
+        color: $skin;
+        position: fixed;
+        text-align: left;
+
+        h1 {
+          font-size: 16vw;
+          font-weight: 400;
+          margin-left: -0.64vw;
+        }
+        h3 {
+          font-size: 3.2vw;
+          font-weight: 200;
+        }
+
+        &--from {
+          left: 12vw;
+        }
+        &--to {
+          left: 36vw;
+        }
+      }
+    }
+  }
+
+  // rules for aspect ratio 2/3
+  @media (max-aspect-ratio: 2/3)  {
+    .cover {
+
+      &__hero {
+        bottom: 48vh;
+        color: $skin--light;
+        left: 10vw;
         position: fixed;
         text-align: left;
 
@@ -110,23 +150,23 @@
         }
       }
       &__period {
-          bottom: 24vh;
-          color: $apple-green;
-          position: fixed;
-          text-align: left;
+        bottom: 24vh;
+        color: $orange--dark;
+        position: fixed;
+        text-align: left;
 
-          h1 {
-            font-size: 24vw;
-            font-weight: 400;
-          }
-          h3 {
-            font-size: 4.8vw;
-            font-weight: 200;
-            margin-left: 0.64vw;
-          }
+        h1 {
+          font-size: 24vw;
+          font-weight: 400;
+          margin-left: -0.64vw;
+        }
+        h3 {
+          font-size: 4.8vw;
+          font-weight: 200;
+        }
 
         &--from {
-          left: 8vw;
+          left: 10vw;
         }
         &--to {
           left: 42vw;
@@ -134,4 +174,5 @@
       }
     }
   }
+
 }
