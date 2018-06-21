@@ -3,20 +3,6 @@
 
 .slide-01--landing {
 
-  // bg-image
-  // .bg-image {
-  //   background-image: url("/assets/img/bg-landing--retina.jpg");
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //
-  //   display: block;
-  //   height: 100vh;
-  //   position: fixed;
-  //   left: 0;
-  //   top: 0;
-  //   width: 100vw;
-  // }
   .bg-mask {
     background: #201e22;
     background: -moz-linear-gradient(45deg, #201e22 0%, #5a1e30 100%);
@@ -33,7 +19,7 @@
 
   // cover
   .cover {
-    bottom: 32vh;
+    bottom: 36vh;
     display: block;
     left: 12vw;
     position: fixed;
@@ -45,12 +31,12 @@
       text-align: left;
 
       h1 {
-        font-size: 8vh;
+        font-size: 6.4vh;
         font-weight: 100;
         margin: 1vh 0 1vh -0.4vw;
       }
       h3 {
-        font-size: 3.2vh;
+        font-size: 2.4vh;
         font-weight: 200;
       }
     }
@@ -61,12 +47,12 @@
         margin-left: 4vw;
 
       h1 {
-        font-size: 16vh;
+        font-size: 12vh;
         font-weight: 400;
         margin-left: -0.64vw;
       }
       h3 {
-        font-size: 3.2vh;
+        font-size: 2.4vh;
         font-weight: 200;
       }
     }
@@ -143,6 +129,16 @@
           font-size: 2.2vh;
           margin-left: 0;
         }
+      }
+    }
+  }
+  .button-start {
+    .btn-hexagon {
+      &__line {
+        background-color: $skin--light;
+        display: inline-block;
+        height: 0.24vh;
+        width: 4.8vh
       }
     }
   }
