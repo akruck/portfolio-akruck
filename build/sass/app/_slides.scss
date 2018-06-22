@@ -132,13 +132,43 @@
       }
     }
   }
-  .button-start {
-    .btn-hexagon {
-      &__line {
-        background-color: $skin--light;
-        display: inline-block;
-        height: 0.24vh;
-        width: 4.8vh
+  .btn-hexagon {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    width: 16vh;
+
+    &__line {
+      background-color: $skin--light;
+      border-radius: 1.2vh;
+      display: inline-block;
+      height: 0.24vh;
+      width: 4.8vh;
+
+      &--02 {
+        transform: rotate(60deg);
+        margin-bottom: -2vh;
+        margin-left: -1.9vh;
+      }
+      &--03 {
+        transform: rotate(120deg);
+        margin-bottom: -6vh;
+        margin-left: -5.46vh;
+      }
+      &--04 {
+        transform: rotate(180deg);
+        margin-bottom: -8vh;
+        margin-left: -9vh;
+      }
+      &--05 {
+        transform: rotate(240deg);
+        margin-bottom: -6vh;
+        margin-left: -9vh;
+      }
+      &--06 {
+        transform: rotate(300deg);
+        margin-bottom: -2vh;
+        margin-left: -6vh;
       }
     }
   }
