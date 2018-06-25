@@ -133,42 +133,44 @@
     }
   }
   .btn-hexagon {
-    background-color: transparent;
+    background-color: $orange--dark;
     border: none;
     display: inline-block;
-    width: 16vh;
+    height: 8vh;
+    position: relative;
+    vertical-align: 5vh;
+    width: 8vh;
+
+    transform: scale(4);
 
     &__line {
       background-color: $skin--light;
       border-radius: 1.2vh;
       display: inline-block;
       height: 0.24vh;
+      left: 50%;
+      margin-left: -2.4vh;
+      position: absolute;
       width: 4.8vh;
 
+      &--01 {
+        transform: rotate(0deg);
+        top: 0;
+      }
       &--02 {
         transform: rotate(60deg);
-        margin-bottom: -2vh;
-        margin-left: -1.9vh;
       }
       &--03 {
         transform: rotate(120deg);
-        margin-bottom: -6vh;
-        margin-left: -5.46vh;
       }
       &--04 {
         transform: rotate(180deg);
-        margin-bottom: -8vh;
-        margin-left: -9vh;
       }
       &--05 {
         transform: rotate(240deg);
-        margin-bottom: -6vh;
-        margin-left: -9vh;
       }
       &--06 {
         transform: rotate(300deg);
-        margin-bottom: -2vh;
-        margin-left: -6vh;
       }
     }
   }

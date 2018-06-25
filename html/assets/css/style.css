@@ -184,33 +184,33 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 0; } }
 
 .slide-01--landing .btn-hexagon {
-  background-color: transparent;
+  background-color: #C14E34;
   border: none;
   display: inline-block;
-  width: 16vh; }
+  height: 8vh;
+  position: relative;
+  vertical-align: 5vh;
+  width: 8vh;
+  transform: scale(4); }
   .slide-01--landing .btn-hexagon__line {
     background-color: #F0E0D3;
     border-radius: 1.2vh;
     display: inline-block;
     height: 0.24vh;
+    left: 50%;
+    margin-left: -2.4vh;
+    position: absolute;
     width: 4.8vh; }
+    .slide-01--landing .btn-hexagon__line--01 {
+      transform: rotate(0deg);
+      top: 0; }
     .slide-01--landing .btn-hexagon__line--02 {
-      transform: rotate(60deg);
-      margin-bottom: -2vh;
-      margin-left: -1.9vh; }
+      transform: rotate(60deg); }
     .slide-01--landing .btn-hexagon__line--03 {
-      transform: rotate(120deg);
-      margin-bottom: -6vh;
-      margin-left: -5.46vh; }
+      transform: rotate(120deg); }
     .slide-01--landing .btn-hexagon__line--04 {
-      transform: rotate(180deg);
-      margin-bottom: -8vh;
-      margin-left: -9vh; }
+      transform: rotate(180deg); }
     .slide-01--landing .btn-hexagon__line--05 {
-      transform: rotate(240deg);
-      margin-bottom: -6vh;
-      margin-left: -9vh; }
+      transform: rotate(240deg); }
     .slide-01--landing .btn-hexagon__line--06 {
-      transform: rotate(300deg);
-      margin-bottom: -2vh;
-      margin-left: -6vh; }
+      transform: rotate(300deg); }
