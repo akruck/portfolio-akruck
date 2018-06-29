@@ -58,6 +58,40 @@
     }
   }
 
+  // button hexagon
+  .btn-hexagon {
+    background-color: $orange--dark;
+    border: none;
+    display: inline-block;
+    height: 13.889vh;
+    line-height: 0;
+    margin-left: 2vh;
+    padding: 0;
+    position: relative;
+    width: 16vh;
+
+    &__svg {
+      display: inline-block;
+      height: auto;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 16vh;
+    }
+
+    &__line {
+      stroke: $skin--light;
+      stroke-width: 2px;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+
+      &--02 {
+        // transform: rotate(60deg);
+      }
+    }
+  }
+  // / button hexagon
+
   // rules for aspect ratio min 2/3 and max 1/1
   @media (min-aspect-ratio: 2/3) and (max-aspect-ratio: 5/4) {
     .cover {
@@ -132,46 +166,5 @@
       }
     }
   }
-  .btn-hexagon {
-    background-color: $orange--dark;
-    border: none;
-    display: inline-block;
-    height: 8vh;
-    position: relative;
-    vertical-align: 5vh;
-    width: 8vh;
-
-    transform: scale(4);
-
-    &__line {
-      background-color: $skin--light;
-      border-radius: 1.2vh;
-      display: inline-block;
-      height: 0.24vh;
-      left: 50%;
-      margin-left: -2.4vh;
-      position: absolute;
-      width: 4.8vh;
-
-      &--01 {
-        transform: rotate(0deg);
-        top: 0;
-      }
-      &--02 {
-        transform: rotate(60deg);
-      }
-      &--03 {
-        transform: rotate(120deg);
-      }
-      &--04 {
-        transform: rotate(180deg);
-      }
-      &--05 {
-        transform: rotate(240deg);
-      }
-      &--06 {
-        transform: rotate(300deg);
-      }
-    }
-  }
+  // / rules for aspect ratio 2/3
 }
