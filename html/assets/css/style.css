@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 2.4vh;
       margin-left: 0; } }
 
-@media (max-aspect-ratio: 2 / 3) {
+@media (min-aspect-ratio: 1 / 3) and (max-aspect-ratio: 2 / 3) {
   .slide-01--landing .cover {
     bottom: 40vh; }
     .slide-01--landing .cover__hero {
@@ -204,4 +204,43 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: -0.8vw; }
       .slide-01--landing .cover__period h3 {
         font-size: 2.2vh;
-        margin-left: 0; } }
+        margin-left: 0; }
+  .slide-01--landing .btn-hexagon {
+    bottom: 12vh;
+    left: 50vw;
+    margin-left: -8vh;
+    position: fixed; } }
+
+@media (max-aspect-ratio: 1 / 3) {
+  .slide-01--landing .cover {
+    bottom: 40vh; }
+    .slide-01--landing .cover__hero {
+      display: block;
+      text-align: left; }
+      .slide-01--landing .cover__hero h1 {
+        font-size: 4.2vh;
+        font-weight: 100;
+        margin: 0.75vh 0 0.75vh -0.3vw; }
+      .slide-01--landing .cover__hero h3 {
+        font-size: 1.6vh; }
+    .slide-01--landing .cover__period {
+      display: inline-block;
+      text-align: left;
+      margin-left: auto;
+      margin-right: 3vw;
+      margin-top: 4.5vw; }
+      .slide-01--landing .cover__period h1 {
+        font-size: 7.8vh;
+        font-weight: 400;
+        margin-left: -0.8vw; }
+      .slide-01--landing .cover__period h3 {
+        font-size: 1.6vh;
+        margin-left: 0; }
+  .slide-01--landing .btn-hexagon {
+    bottom: 8vh;
+    left: 50vw;
+    margin-left: -6vh;
+    position: fixed;
+    width: 12vh; }
+    .slide-01--landing .btn-hexagon__svg {
+      width: 12vh; } }
