@@ -83,14 +83,11 @@
     }
 
     &__line {
+      opacity: 0;
       stroke: $skin--light;
       stroke-width: 2px;
       stroke-linecap:round;
       stroke-linejoin:round;
-
-      &--02 {
-        // transform: rotate(60deg);
-      }
     }
   }
   // / button hexagon
@@ -242,7 +239,13 @@
 // ---------- ---------- ---------- ---------- ----------
 .btn-hexagon {
   &__line {
-    animation: lines__blend-in--01 5s;
+
+    &--01 {animation: lines__blend-in--01 1s; animation-fill-mode: forwards;}
+    &--02 {animation: lines__blend-in--01 1s;   animation-delay: 0.5s;  animation-fill-mode: forwards;}
+    &--03 {animation: lines__blend-in--01 1s;   animation-delay: 1s;    animation-fill-mode: forwards;}
+    &--04 {animation: lines__blend-in--01 1s;   animation-delay: 1.5s;  animation-fill-mode: forwards;}
+    &--05 {animation: lines__blend-in--01 1s;   animation-delay: 2s;    animation-fill-mode: forwards;}
+    &--06 {animation: lines__blend-in--01 1s;   animation-delay: 2.5s;  animation-fill-mode: forwards;}
   }
 }
 

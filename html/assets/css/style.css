@@ -151,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     width: 16vh; }
   .slide-01--landing .btn-hexagon__line {
+    opacity: 0;
     stroke: #F0E0D3;
     stroke-width: 2px;
     stroke-linecap: round;
@@ -245,8 +246,34 @@ h1, h2, h3, h4, h5, h6 {
     .slide-01--landing .btn-hexagon__svg {
       width: 12vh; } }
 
-.btn-hexagon__line {
-  animation: lines__blend-in--01 5s; }
+.btn-hexagon__line--01 {
+  animation: lines__blend-in--01 1s;
+  animation-fill-mode: forwards; }
+
+.btn-hexagon__line--02 {
+  animation: lines__blend-in--01 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards; }
+
+.btn-hexagon__line--03 {
+  animation: lines__blend-in--01 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards; }
+
+.btn-hexagon__line--04 {
+  animation: lines__blend-in--01 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards; }
+
+.btn-hexagon__line--05 {
+  animation: lines__blend-in--01 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards; }
+
+.btn-hexagon__line--06 {
+  animation: lines__blend-in--01 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards; }
 
 @keyframes lines__blend-in--01 {
   /* You could think of as "step 1" */
