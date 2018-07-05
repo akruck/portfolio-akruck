@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: 200; }
 
 .slide-01--landing .btn-hexagon {
-  background-color: #C14E34;
+  background-color: transparent;
   border: none;
   display: inline-block;
   height: 13.889vh;
@@ -244,3 +244,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 12vh; }
     .slide-01--landing .btn-hexagon__svg {
       width: 12vh; } }
+
+.btn-hexagon__line {
+  animation: lines__blend-in--01 5s; }
+
+@keyframes lines__blend-in--01 {
+  /* You could think of as "step 1" */
+  0% {
+    opacity: 0; }
+  /* You could think of as "step 2" */
+  100% {
+    opacity: 1; } }
