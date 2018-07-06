@@ -139,16 +139,13 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   height: 13.889vh;
   line-height: 0;
-  margin-left: 2vh;
+  margin-left: 8vh;
   padding: 0;
   position: relative;
   width: 16vh; }
   .slide-01--landing .btn-hexagon__svg {
     display: inline-block;
     height: auto;
-    left: 0;
-    position: absolute;
-    top: 0;
     width: 16vh; }
   .slide-01--landing .btn-hexagon__line {
     opacity: 0;
