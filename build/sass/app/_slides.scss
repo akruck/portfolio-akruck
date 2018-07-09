@@ -30,7 +30,11 @@
     &__hero {
       display: inline-block;
       color: $skin--light;
+      opacity: 0;
       text-align: left;
+
+      animation: blend-in--01 1.6s;
+      animation-fill-mode: forwards;
 
       h1 {
         font-size: 6.4vh;
@@ -45,8 +49,13 @@
     &__period {
         color: $apple-green;
         display: inline-block;
-        text-align: left;
         margin-left: 4vw;
+        opacity: 0;
+        text-align: left;
+
+        animation: blend-in--01 1.6s;
+        animation-delay: 0.4s;
+        animation-fill-mode: forwards;
 
       h1 {
         font-size: 12vh;
@@ -237,16 +246,16 @@
 .btn-hexagon {
   &__line {
 
-    &--01 {animation: lines__blend-in--01 1s; animation-fill-mode: forwards;}
-    &--02 {animation: lines__blend-in--01 1s;   animation-delay: 0.5s;  animation-fill-mode: forwards;}
-    &--03 {animation: lines__blend-in--01 1s;   animation-delay: 1s;    animation-fill-mode: forwards;}
-    &--04 {animation: lines__blend-in--01 1s;   animation-delay: 1.5s;  animation-fill-mode: forwards;}
-    &--05 {animation: lines__blend-in--01 1s;   animation-delay: 2s;    animation-fill-mode: forwards;}
-    &--06 {animation: lines__blend-in--01 1s;   animation-delay: 2.5s;  animation-fill-mode: forwards;}
+    &--01 {animation: blend-in--01 0.2s;   animation-delay: 1.0s; animation-fill-mode: forwards;}
+    &--02 {animation: blend-in--01 0.2s;   animation-delay: 1.1s;  animation-fill-mode: forwards;}
+    &--03 {animation: blend-in--01 0.2s;   animation-delay: 1.2s;    animation-fill-mode: forwards;}
+    &--04 {animation: blend-in--01 0.2s;   animation-delay: 1.3s;  animation-fill-mode: forwards;}
+    &--05 {animation: blend-in--01 0.2s;   animation-delay: 1.4s;    animation-fill-mode: forwards;}
+    &--06 {animation: blend-in--01 0.2s;   animation-delay: 1.5s;  animation-fill-mode: forwards;}
   }
 }
 
-@keyframes lines__blend-in--01 {
+@keyframes blend-in--01 {
   /* You could think of as "step 1" */
   0% {
     opacity: 0;
