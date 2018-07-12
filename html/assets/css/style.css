@@ -108,7 +108,10 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   left: 12vw;
   position: fixed;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  animation: slide-left-01 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out; }
   .slide-01--landing .cover__hero {
     display: inline-block;
     color: #F0E0D3;
@@ -154,14 +157,14 @@ h1, h2, h3, h4, h5, h6 {
   animation: blend-in--01 1.6s;
   animation-delay: 0.4s;
   animation-fill-mode: forwards; }
-  .slide-01--landing .btn-hexagon:hover {
-    animation: scale-pulse--01 1.6s;
-    animation-timing-function: ease-in-out;
-    opacity: 1; }
   .slide-01--landing .btn-hexagon__svg {
     display: inline-block;
     height: auto;
     width: 16vh; }
+    .slide-01--landing .btn-hexagon__svg:hover {
+      animation: scale-pulse--01 2.4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite; }
   .slide-01--landing .btn-hexagon__line {
     opacity: 0;
     stroke: #F0E0D3;
@@ -185,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 50%;
     margin-top: -5vh;
     right: -2vh;
-    animation: move-right--01 4s;
+    animation: move-right--01 2.4s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite; }
 
@@ -334,6 +337,12 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     transform: scale(1); }
   50% {
-    transform: scale(1.2); }
+    transform: scale(1.1); }
   100% {
     transform: scale(1); } }
+
+@keyframes slide-left-01 {
+  0% {
+    left: 6vw; }
+  100% {
+    left: 12vw; } }
