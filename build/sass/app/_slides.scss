@@ -47,7 +47,7 @@
       }
       h3 {
         font-size: 2.4vh;
-        font-weight: 200;
+        font-weight: 100;
       }
     }
     &__period {
@@ -63,12 +63,12 @@
 
       h1 {
         font-size: 12vh;
-        font-weight: 400;
+        font-weight: 100;
         margin-left: -0.64vw;
       }
       h3 {
         font-size: 2.4vh;
-        font-weight: 200;
+        font-weight: 100;
       }
     }
   }
@@ -96,6 +96,8 @@
       height: auto;
       width: 16vh;
 
+      transition: height 0.4s ease-in-out;
+
       &:hover {
         animation: scale-pulse--01 2.4s;
         animation-timing-function: ease-in-out;
@@ -116,7 +118,7 @@
     &__copy {
       color: $skin--light;
       font-size: 2.4vh;
-      font-weight: 200;
+      font-weight: 100;
       height: auto;
       left: 0;
       text-align: center;
@@ -164,7 +166,7 @@
 
         h1 {
           font-size: 12vh;
-          font-weight: 400;
+          font-weight: 100;
           margin-left: -0.8vw;
         }
         h3 {
@@ -211,7 +213,7 @@
 
         h1 {
           font-size: 10.4vh;
-          font-weight: 400;
+          font-weight: 100;
           margin-left: -0.8vw;
         }
         h3 {
@@ -266,7 +268,7 @@
 
           h1 {
             font-size: 7.8vh;
-            font-weight: 400;
+            font-weight: 100;
             margin-left: -0.8vw;
           }
           h3 {
