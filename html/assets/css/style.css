@@ -6,6 +6,76 @@ body {
   min-height: 100%;
   overflow: hidden; }
 
+body {
+  position: relative;
+  width: 80%;
+  max-width: 60rem;
+  margin: 0 auto;
+  color: #444; }
+
+/* Loading indicator */
+.loader {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin: -1rem 0 0 -1rem;
+  border: 5px solid transparent;
+  border-left-color: #BADA55;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: rotate 1s linear 0s infinite normal;
+  -moz-animation: rotate 1s linear 0s infinite normal;
+  animation: rotate 1s linear 0s infinite normal; }
+
+/* Indicator keyframe animation */
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/* Content */
+main {
+  opacity: 0;
+  background: white;
+  padding: 1rem 2rem;
+  font-family: 'Avenir Next', sans-serif; }
+
+/* Quickly loaded states */
+body.loaded main {
+  -webkit-transition: .15s 1s opacity;
+  /* .15s animation w/ 1s delay */
+  -moz-transition: .15s 1s opacity;
+  /* .15s animation w/ 1s delay */
+  transition: .15s 1s opacity;
+  /* .15s animation w/ 1s delay */
+  opacity: 1; }
+
+body.loaded .loader {
+  visibility: hidden;
+  -webkit-transition: 0s 1s visibility;
+  /* 1s delay */
+  -moz-transition: 0s 1s visibility;
+  /* 1s delay */
+  transition: 0s 1s visibility;
+  /* 1s delay */ }
+
 @font-face {
   font-family: "exo-2";
   font-weight: 100;
