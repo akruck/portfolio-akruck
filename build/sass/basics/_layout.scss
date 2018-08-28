@@ -27,7 +27,7 @@ body {
   left: 50%;
   margin: -1rem 0 0 -1rem;
   border: 5px solid transparent;
-  border-left-color: #BADA55;
+  border-left-color: $apple-green;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -57,12 +57,12 @@ main {
   opacity: 0;
   background: white;
   padding: 1rem 2rem;
-
+}
 /* Quickly loaded states */
 body.loaded main {
-  -webkit-transition: .15s 1s opacity; /* .15s animation w/ 1s delay */
-  -moz-transition: .15s 1s opacity; /* .15s animation w/ 1s delay */
-  transition: .15s 1s opacity; /* .15s animation w/ 1s delay */
+  -webkit-transition: 2s 1s opacity; /* .15s animation w/ 1s delay */
+  -moz-transition: 2s 1s opacity; /* .15s animation w/ 1s delay */
+  transition: 2s 1s opacity; /* .15s animation w/ 1s delay */
   opacity: 1;
 }
 
