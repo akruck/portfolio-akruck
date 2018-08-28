@@ -24,7 +24,6 @@ var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var path = require('path');
 var inject = require('gulp-inject');
-var ttf2woff = require('gulp-ttf2woff');
 
 
 // generate icon svg sprite
@@ -32,7 +31,7 @@ var ttf2woff = require('gulp-ttf2woff');
 
 gulp.task('svgstore', function () {
     var svgs = gulp
-        .src('build/sprite/*.svg')
+        .src('build/sprite/svg/*.svg')
         .pipe(svgmin(function(file) {
          return {
           plugins: [{
@@ -49,20 +48,32 @@ gulp.task('svgstore', function () {
     }
 
     return gulp
-        .src('html/app/foundations/iconography.html')
+        .src('html/index.html')
         .pipe(inject(svgs, { transform: fileContents }))
-        .pipe(gulp.dest('html/app/foundations/'));
+        .pipe(gulp.dest('html/'));
 });
 
 
 // Create woff out of a ttf
 //-------------------------------------------------
+var ttf2woff = require('gulp-ttf2woff');
+
 gulp.task('ttf2woff', function(){
-  gulp.src(['html/assets/fonts/*.ttf'])
+  gulp.src(['html/assets/fonts/Exo_2/*.ttf'])
     .pipe(ttf2woff())
-    .pipe(gulp.dest('html/assets/fonts/'));
+    .pipe(gulp.dest('html/assets/fonts/Exo_2/'));
 });
 
+
+// Create woff out of a ttf
+//-------------------------------------------------
+var ttf2eot = require('gulp-ttf2eot');
+
+gulp.task('ttf2eot', function(){
+  gulp.src(['html/assets/fonts/Exo_2/*.ttf'])
+    .pipe(ttf2eot())
+    .pipe(gulp.dest('html/assets/fonts/Exo_2/'));
+});
 
 // default task runner
 //-------------------------------------------------
