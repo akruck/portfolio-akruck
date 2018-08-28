@@ -6,75 +6,69 @@ body {
   min-height: 100%;
   overflow: hidden; }
 
-body {
-  position: relative;
-  width: 80%;
-  max-width: 60rem;
-  margin: 0 auto;
-  color: #444; }
-
 /* Loading indicator */
-.loader {
-  display: block;
-  width: 2rem;
-  height: 2rem;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  margin: -1rem 0 0 -1rem;
-  border: 5px solid transparent;
-  border-left-color: #BEAB43;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-animation: rotate 1s linear 0s infinite normal;
-  -moz-animation: rotate 1s linear 0s infinite normal;
-  animation: rotate 1s linear 0s infinite normal; }
+.loader .btn-hexagon {
+  height: 12.8vh;
+  opacity: 1;
+  position: fixed;
+  right: 32vw;
+  top: 48vh;
+  width: 11.2vh;
+  transition: opacity 0.8s ease-out;
+  transition-delay: 0.4s;
+  animation: blend-in 0.4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+  .loader .btn-hexagon__arrow {
+    height: 4.8vh;
+    opacity: 1;
+    position: fixed;
+    right: 32vw;
+    width: 11.2vh;
+    transition: opacity 0.8s ease-out;
+    transition-delay: 0.4s; }
+    .loader .btn-hexagon__arrow--up {
+      top: 45.3vh;
+      animation: pulse--top 2.4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite; }
+    .loader .btn-hexagon__arrow--down {
+      top: 58.8vh;
+      animation: pulse--bottom 2.4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite; }
+
+main {
+  background-color: #C14E34;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 100vh;
+  width: 100vw;
+  transition: top 0.4s 0.4s ease-in-out; }
+
+.loaded main {
+  opacity: 1;
+  top: 0; }
+
+.loaded .loader .btn-hexagon {
+  opacity: 0; }
+  .loaded .loader .btn-hexagon__arrow {
+    opacity: 0; }
+    .loaded .loader .btn-hexagon__arrow--up {
+      animation: raise--top 0.48s;
+      animation-timing-function: ease-out;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards; }
+    .loaded .loader .btn-hexagon__arrow--down {
+      animation: fall--bottom 0.48s;
+      animation-timing-function: ease-out;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards; }
 
 /* Indicator keyframe animation */
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg); } }
-
-@-moz-keyframes rotate {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(360deg); } }
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-
 /* Content */
-main {
-  opacity: 0;
-  background: white;
-  padding: 1rem 2rem; }
-
-/* Quickly loaded states */
-body.loaded main {
-  -webkit-transition: 2s 1s opacity;
-  /* .15s animation w/ 1s delay */
-  -moz-transition: 2s 1s opacity;
-  /* .15s animation w/ 1s delay */
-  transition: 2s 1s opacity;
-  /* .15s animation w/ 1s delay */
-  opacity: 1; }
-
-body.loaded .loader {
-  visibility: hidden;
-  -webkit-transition: 0s 1s visibility;
-  /* 1s delay */
-  -moz-transition: 0s 1s visibility;
-  /* 1s delay */
-  transition: 0s 1s visibility;
-  /* 1s delay */ }
-
 @font-face {
   font-family: "exo-2";
   font-weight: 100;
@@ -89,206 +83,48 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; }
 
 .btn-hexagon {
-  background-color: transparent;
-  border: none;
-  display: inline-block;
-  height: 13.889vh;
-  line-height: 0;
-  margin-left: 8vh;
-  opacity: 0;
-  padding: 0;
-  position: relative;
-  width: 16vh;
-  animation: blend-in--01 1.6s;
-  animation-delay: 0.4s;
-  animation-fill-mode: forwards; }
-  .btn-hexagon__svg {
-    display: inline-block;
-    height: auto;
-    width: 16vh;
-    transition: height 0.4s ease-in-out; }
-    .btn-hexagon__svg:hover {
-      animation: scale-pulse--01 2.4s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite; }
-  .btn-hexagon__line {
-    opacity: 0;
-    stroke: #F0E0D3;
-    stroke-width: 2px;
-    stroke-linecap: round;
-    stroke-linejoin: round; }
-  .btn-hexagon__copy, .btn-hexagon__arrow {
-    position: absolute; }
-  .btn-hexagon__copy {
-    color: #F0E0D3;
-    font-size: 2.4vh;
-    font-weight: 100;
-    height: auto;
-    left: 0;
-    text-align: center;
-    top: 50%;
-    width: 100%; }
+  fill: none;
+  stroke: #BEAB43;
+  stroke-width: 1; }
   .btn-hexagon__arrow {
-    fill: #F0E0D3;
-    height: 10vh;
-    top: 50%;
-    margin-top: -5vh;
-    right: -2vh; }
+    fill: none;
+    stroke: #BEAB43;
+    stroke-width: 1;
+    stroke-linecap: round; }
 
-@media (min-aspect-ratio: 2 / 3) and (max-aspect-ratio: 5 / 4) {
-  .cover__hero {
-    display: block;
-    text-align: left; }
-    .cover__hero h1 {
-      font-size: 6vh;
-      font-weight: 100;
-      margin: 1vh 0 1vh -0.4vw; }
-    .cover__hero h3 {
-      font-size: 2.4vh; }
-  .cover__period {
-    display: inline-block;
-    text-align: left;
-    margin-top: 4vh;
-    margin-left: auto;
-    margin-right: 4vw; }
-    .cover__period h1 {
-      font-size: 12vh;
-      font-weight: 100;
-      margin-left: -0.8vw; }
-    .cover__period h3 {
-      font-size: 2.4vh;
-      margin-left: 0; }
-  .btn-hexagon__copy {
-    font-size: 2.2vh; } }
+@keyframes pulse--top {
+  0% {
+    margin-top: 0; }
+  50% {
+    margin-top: -2vh; }
+  100% {
+    margin-top: 0; } }
 
-@media (min-aspect-ratio: 1 / 3) and (max-aspect-ratio: 2 / 3) {
-  .cover {
-    bottom: 40vh; }
-    .cover__hero {
-      display: block;
-      text-align: left; }
-      .cover__hero h1 {
-        font-size: 5.5vh;
-        font-weight: 100;
-        margin: 1vh 0 1vh -0.4vw; }
-      .cover__hero h3 {
-        font-size: 2.2vh; }
-    .cover__period {
-      display: inline-block;
-      text-align: left;
-      margin-left: auto;
-      margin-right: 4vw;
-      margin-top: 6vw; }
-      .cover__period h1 {
-        font-size: 10.4vh;
-        font-weight: 100;
-        margin-left: -0.8vw; }
-      .cover__period h3 {
-        font-size: 2.2vh;
-        margin-left: 0; }
-  .btn-hexagon {
-    bottom: 12vh;
-    left: 50vw;
-    margin-left: -8vh;
-    position: fixed; }
-    .btn-hexagon__copy, .btn-hexagon__arrow {
-      position: absolute; }
-    .btn-hexagon__copy {
-      font-size: 2.2vh; } }
+@keyframes pulse--bottom {
+  0% {
+    margin-top: 0; }
+  50% {
+    margin-top: 2vh; }
+  100% {
+    margin-top: 0; } }
 
-@media (max-aspect-ratio: 1 / 3) {
-  .cover {
-    bottom: 40vh; }
-    .cover__hero {
-      display: block;
-      text-align: left; }
-      .cover__hero h1 {
-        font-size: 4.2vh;
-        font-weight: 100;
-        margin: 0.75vh 0 0.75vh -0.3vw; }
-      .cover__hero h3 {
-        font-size: 1.6vh; }
-    .cover__period {
-      display: inline-block;
-      text-align: left;
-      margin-left: auto;
-      margin-right: 3vw;
-      margin-top: 4.5vw; }
-      .cover__period h1 {
-        font-size: 7.8vh;
-        font-weight: 100;
-        margin-left: -0.8vw; }
-      .cover__period h3 {
-        font-size: 1.6vh;
-        margin-left: 0; }
-  .btn-hexagon {
-    bottom: 8vh;
-    left: 50vw;
-    margin-left: -6vh;
-    position: fixed;
-    width: 12vh; }
-    .btn-hexagon__svg {
-      width: 12vh; }
-    .btn-hexagon__copy {
-      font-size: 2.2vh; } }
+@keyframes raise--top {
+  0% {
+    margin-top: 0; }
+  100% {
+    margin-top: -60vh; } }
 
-.btn-hexagon__line--01 {
-  animation: blend-in--01 0.2s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards; }
+@keyframes fall--bottom {
+  0% {
+    margin-top: 0; }
+  100% {
+    margin-top: 60vh; } }
 
-.btn-hexagon__line--02 {
-  animation: blend-in--01 0.2s;
-  animation-delay: 0.55s;
-  animation-fill-mode: forwards; }
-
-.btn-hexagon__line--03 {
-  animation: blend-in--01 0.2s;
-  animation-delay: 0.6s;
-  animation-fill-mode: forwards; }
-
-.btn-hexagon__line--04 {
-  animation: blend-in--01 0.2s;
-  animation-delay: 0.65s;
-  animation-fill-mode: forwards; }
-
-.btn-hexagon__line--05 {
-  animation: blend-in--01 0.2s;
-  animation-delay: 0.7s;
-  animation-fill-mode: forwards; }
-
-.btn-hexagon__line--06 {
-  animation: blend-in--01 0.2s;
-  animation-delay: 0.75s;
-  animation-fill-mode: forwards; }
-
-@keyframes blend-in--01 {
+@keyframes blend-in {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-@keyframes move-right--01 {
-  0% {
-    right: -2vh; }
-  50% {
-    right: -4vh; }
-  100% {
-    right: -2vh; } }
-
-@keyframes scale-pulse--01 {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.1); }
-  100% {
-    transform: scale(1); } }
-
-@keyframes slide-left-01 {
-  0% {
-    left: 6vw; }
-  100% {
-    left: 12vw; } }
 
 .slide-01--landing .bg-mask {
   background: #201e22;

@@ -1,41 +1,59 @@
-@keyframes blend-in--01 {
+// pulse
+// ---------- ---------- ---------- ---------- ----------
+
+// pulse top
+@keyframes pulse--top {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -2vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+// pulse bottom
+@keyframes pulse--bottom {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 2vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+// rise and fall
+// ---------- ---------- ---------- ---------- ----------
+@keyframes raise--top {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -60vh;
+  }
+}
+
+@keyframes fall--bottom {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 60vh;
+  }
+}
+
+// blend in
+// ---------- ---------- ---------- ---------- ----------
+@keyframes blend-in {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes move-right--01 {
-  0% {
-    right: -2vh;
-  }
-  50% {
-    right: -4vh;
-  }
-  100% {
-    right: -2vh;
-  }
-}
-
-@keyframes scale-pulse--01 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes slide-left-01 {
-  0% {
-    left: 6vw;
-  }
-  100% {
-    left: 12vw;
   }
 }
