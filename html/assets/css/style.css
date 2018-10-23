@@ -126,68 +126,37 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     opacity: 1; } }
 
-.slide-01--landing .bg-mask {
-  background: #201e22;
-  background: -moz-linear-gradient(45deg, #201e22 0%, #5a1e30 100%);
-  background: -webkit-linear-gradient(45deg, #201e22 0%, #5a1e30 100%);
-  background: linear-gradient(45deg, #201e22 0%, #5a1e30 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#201e22', endColorstr='#5a1e30',GradientType=1 );
-  display: block;
+.slide-01--landing .bg-animation__wrapper {
   height: 100vh;
   left: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100vw; }
-
-.slide-01--landing .cover {
-  bottom: 36vh;
-  display: block;
-  left: 12vw;
-  position: fixed;
-  text-transform: uppercase;
-  animation: slide-left-01 1.2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out; }
-  .slide-01--landing .cover__hero {
-    display: inline-block;
-    color: #F0E0D3;
-    opacity: 0;
-    text-align: left;
-    animation: blend-in--01 1.6s;
-    animation-fill-mode: forwards; }
-    .slide-01--landing .cover__hero h1 {
-      font-size: 6.4vh;
-      font-weight: 100;
-      margin: 1vh 0 1vh -0.4vw; }
-    .slide-01--landing .cover__hero h3 {
-      font-size: 2.4vh;
-      font-weight: 100; }
-  .slide-01--landing .cover__period {
-    color: #BEAB43;
-    display: inline-block;
-    margin-left: 4vw;
-    opacity: 0;
-    text-align: left;
-    animation: blend-in--01 1.6s;
-    animation-delay: 0.2s;
-    animation-fill-mode: forwards; }
-    .slide-01--landing .cover__period h1 {
-      font-size: 12vh;
-      font-weight: 100;
-      margin-left: -0.64vw; }
-    .slide-01--landing .cover__period h3 {
-      font-size: 2.4vh;
-      font-weight: 100; }
-
-.slide-02--overview .bg-mask {
-  background: #4E5457;
-  background: -moz-linear-gradient(45deg, #201E22 0%, #4E5457 100%);
-  background: -webkit-linear-gradient(45deg, #201E22 0%, #4E5457 100%);
-  background: linear-gradient(45deg, #201E22 0%, #4E5457 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$grey--darker', endColorstr='$grey--dark',GradientType=1 );
-  display: block;
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100vw; }
+  .slide-01--landing .bg-animation__wrapper .bg-animation {
+    background-image: url("../img/bg-landing--retina.jpg");
+    background-position: center 88%;
+    background-size: cover;
+    height: 100vh;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw; }
+  .slide-01--landing .bg-animation__wrapper .gate-dark {
+    height: 100vw;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw; }
+    .slide-01--landing .bg-animation__wrapper .gate-dark svg {
+      height: 2000px;
+      margin-top: calc(((2000px - 100vh) / 2 ) * -1);
+      margin-left: calc(((2000px - 100vw) / 2 ) * -1);
+      width: 2000px; }
+    .slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
+      margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 40px);
+      margin-left: calc((((2000px - 100vw) / 2 ) * -1) + 8px);
+      fill: url(#svg-gradiant--grey-dark) #4E5457; }
+    .slide-01--landing .bg-animation__wrapper .gate-dark--bottom svg {
+      fill: url(#svg-gradiant--grey-darker) #201E22; }
