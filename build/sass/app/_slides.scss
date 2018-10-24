@@ -20,7 +20,7 @@
 
         .bg-animation {
           background-image: url("../img/bg-landing.jpg");
-          background-repeat: no-repeat;
+          background-repeat: repeat;
           background-position: center 132%;
           background-size: contain;
           height: 100vh;
@@ -29,6 +29,17 @@
           position: fixed;
           top: 0;
           width: 100vw;
+
+          @media (max-aspect-ratio: 1/1) {
+            background-position: center 76%;
+          }
+          @media (max-width: 1100px) {
+            background-position: center 112%;
+          }
+          @media (height: 700px) {
+            background-position: center 110%;
+            background-size: 110%;
+          }
         }
 
         .gate-dark {
@@ -39,29 +50,41 @@
           width: 100vw;
 
           svg {
-            filter: drop-shadow(0px 0px 8px rgba(16,15,17,0.9));
+            filter: drop-shadow(2px 4px 16px rgba(16,15,17,0.9));
             height: 2000px;
             margin-top: calc(((2000px - 100vh) / 2 ) * -1);
             margin-left: calc(((2000px - 100vw) / 2 ) * -1);
             // margin-left: 0;
             width: 2000px;
-
-            @media (max-aspect-ratio: 1/1) {
-
-            }
           }
 
           &--top {
 
             svg {
               fill: url(#svg-gradiant--grey-dark) #4E5457;
-              margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 48px);
-              margin-left: calc((((2000px - 100vw) / 2 ) * -1) + 16px);
+              margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 40px);
+              margin-left: calc((((2000px - 100vw) / 2 ) * -1) + 12px);
               stroke: $sand;
               stroke-width: 1;
 
-              @media (max-aspect-ratio: 1/1) {
-
+              @media (min-width: 1920px) {
+                margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 64px);
+                margin-left: -1.8vw;
+                height: 104vw;
+                width: 104vw;
+              }
+              @media (max-aspect-ratio: 1/1) and (min-width: 1920px) {
+                margin-left: calc((((104vh - 100vw) / 2 ) * -1) - 64px);
+                margin-top: -40px;
+                height: 104vh;
+                width: 104vh;
+              }
+              @media (max-width: 1100px) and (min-aspect-ratio: 1/1) {
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.265);
+              }
+              @media (max-height: 700px) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 120px);
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.275);
               }
             }
           }
@@ -70,6 +93,28 @@
               fill: url(#svg-gradiant--grey-darker) #201E22;
               stroke: $grey;
               stroke-width: 1;
+
+              @media (min-width: 1920px) {
+                margin-top: calc((((104vw - 100vh) / 2 ) * -1));
+                margin-left: -2vw;
+                height: 104vw;
+                width: 104vw;
+              }
+              @media (max-aspect-ratio: 1/1) and (min-width: 1920px) {
+                margin-left: calc((((104vh - 100vw) / 2 ) * -1) - 64px);
+                margin-top: -40px;
+                height: 104vh;
+                width: 104vh;
+              }
+              @media (max-width: 1100px) and (min-aspect-ratio: 1/1) {
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.29);
+              }
+              @media (max-width: 1100px) and (max-aspect-ratio: 1/1) {
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.29);
+              }
+              @media (max-height: 700px) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 92px);
+              }
             }
           }
         }
