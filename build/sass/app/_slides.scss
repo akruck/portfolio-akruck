@@ -42,8 +42,8 @@
             background-position: center 112%;
           }
           @media (height: 700px) {
-            background-position: center 110%;
-            background-size: 110%;
+            // background-position: center 110%;
+            // background-size: 110%;
           }
         }
 
@@ -64,7 +64,6 @@
           }
 
           &--top {
-
             svg {
               fill: url(#svg-gradiant--grey-dark) #4E5457;
               margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 40px);
@@ -72,24 +71,28 @@
               stroke: $sand;
               stroke-width: 1;
 
-              @media (min-width: 1920px) {
+              @media (min-width: 1940px) {
                 margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 64px);
                 margin-left: -1.8vw;
                 height: 104vw;
                 width: 104vw;
               }
-              @media (max-aspect-ratio: 1/1) and (min-width: 1920px) {
-                margin-left: calc((((104vh - 100vw) / 2 ) * -1) - 64px);
-                margin-top: -40px;
-                height: 104vh;
-                width: 104vh;
+              @media (max-width: 1000px) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 120px);
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 68px);
+              }
+              @media (max-width: 820px) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 180px);
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 168px);
+              }
+              @media (max-aspect-ratio: 1/1) and (min-width: 1940px) {
+                // margin-left: calc((((104vh - 100vw) / 2 ) * -1) - 64px);
+                // margin-top: -40px;
+                // height: 104vh;
+                // width: 104vh;
               }
               @media (max-width: 1100px) and (min-aspect-ratio: 1/1) {
-                margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.265);
-              }
-              @media (max-height: 700px) {
-                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 120px);
-                margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.275);
+                // margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.265);
               }
             }
           }
@@ -99,26 +102,31 @@
               stroke: $grey;
               stroke-width: 1;
 
-              @media (min-width: 1920px) {
+              @media (min-width: 1940px) {
                 margin-top: calc((((104vw - 100vh) / 2 ) * -1));
                 margin-left: -2vw;
                 height: 104vw;
                 width: 104vw;
               }
-              @media (max-aspect-ratio: 1/1) and (min-width: 1920px) {
+              @media (max-aspect-ratio: 1/1) and (min-width: 1940px) {
                 margin-left: calc((((104vh - 100vw) / 2 ) * -1) - 64px);
                 margin-top: -40px;
                 height: 104vh;
                 width: 104vh;
               }
-              @media (max-width: 1100px) and (min-aspect-ratio: 1/1) {
-                margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.29);
+              @media (max-width: 1000px) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px);
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 80px);
+              }
+              @media (max-width: 820px) {
+                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 140px);
+                margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 180px);
               }
               @media (max-width: 1100px) and (max-aspect-ratio: 1/1) {
-                margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.29);
+                // margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.29);
               }
-              @media (max-height: 700px) {
-                margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 92px);
+              @media (max-width: 1100px) and (max-aspect-ratio: 1/1) {
+                // margin-left: calc((((2000px - 100vw) / 2 ) * -1) * 1.29);
               }
             }
           }
