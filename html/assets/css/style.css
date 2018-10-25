@@ -6,7 +6,6 @@ body {
   min-height: 100%;
   overflow: hidden; }
 
-/* Loading indicator */
 .loader .btn-hexagon {
   height: 12.8vh;
   opacity: 1;
@@ -67,8 +66,13 @@ main {
       animation-iteration-count: 1;
       animation-fill-mode: forwards; }
 
-/* Indicator keyframe animation */
-/* Content */
+.content-wrapper {
+  width: 100%; }
+
+.content-area {
+  width: 1272px;
+  margin: 0 auto; }
+
 @font-face {
   font-family: "exo-2";
   font-weight: 100;
@@ -81,6 +85,9 @@ main {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
+
+.text-light {
+  color: #F0E0D3; }
 
 .btn-hexagon {
   fill: none;
@@ -166,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     width: 100vw; }
     .slide-01--landing .bg-animation__wrapper .gate-dark svg {
-      filter: drop-shadow(2px 4px 16px rgba(16, 15, 17, 0.9));
+      filter: drop-shadow(0px 0px 12px black);
       height: 2000px;
       margin-top: calc(((2000px - 100vh) / 2 ) * -1);
       margin-left: calc(((2000px - 100vw) / 2 ) * -1);
@@ -233,3 +240,14 @@ h1, h2, h3, h4, h5, h6 {
       @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
         .slide-01--landing .bg-animation__wrapper .gate-dark--bottom svg {
           margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 240px); } }
+
+.slide-01--landing .content-wrapper {
+  position: fixed;
+  top: calc(50vh + 64px); }
+
+.slide-01--landing .content-area h1 {
+  color: #8A837D;
+  font-size: 16px;
+  text-transform: uppercase; }
+  .slide-01--landing .content-area h1 span {
+    margin-left: 16px; }

@@ -4,7 +4,10 @@
 
 .slide {
 
-  // Slide 01 Landing
+  // ---------- ---------- ---------- ---------- ----------
+  // Slide 01 landing
+  // ---------- ---------- ---------- ---------- ----------
+
   &-01--landing {
 
     .bg-animation {
@@ -62,7 +65,7 @@
           width: 100vw;
 
           svg {
-            filter: drop-shadow(2px 4px 16px rgba(16,15,17,0.9));
+            filter: drop-shadow(0px 0px 12px black);
             height: 2000px;
             margin-top: calc(((2000px - 100vh) / 2 ) * -1);
             margin-left: calc(((2000px - 100vw) / 2 ) * -1);
@@ -144,6 +147,28 @@
                 margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 240px);
               }
             }
+          }
+        }
+      }
+    }
+
+
+    // ---------- ---------- ---------- ---------- ----------
+    // content area
+    // ---------- ---------- ---------- ---------- ----------
+    .content {
+      &-wrapper {
+        position: fixed;
+        top: calc(50vh + 64px);
+      }
+      &-area {
+        h1 {
+          color: $grey;
+          font-size: 16px;
+          text-transform: uppercase;
+
+          span {
+            margin-left: 16px;
           }
         }
       }
