@@ -160,15 +160,29 @@
       &-wrapper {
         position: fixed;
         top: calc(50vh + 64px);
+
+        @media (max-width: 1000px) {
+          top: calc(50vh + 8px);
+        }
+        @media (max-width: 820px) {
+          top: calc(50vh - 52px);
+        }
       }
       &-area {
         h1 {
           color: $grey;
           font-size: 16px;
+          line-height: 20px;
           text-transform: uppercase;
 
           span {
             margin-left: 16px;
+
+            @media (max-width: 820px) and (max-aspect-ratio: 1/1) {
+              display: block;
+              margin-left: 0;
+              margin-top: 16px;
+            }
           }
         }
       }

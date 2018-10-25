@@ -111,5 +111,18 @@ main {
   &-area {
     width: 1272px;
     margin: 0 auto;
+
+    @media (max-width: 1386px) {
+      width: 936px;
+    }
+    @media (max-width: 992px) {
+      width: 648px;
+    }
+    @media (max-width: 768px) {
+      width: calc(100vw - 64px);
+    }
+    @media (max-width: 576px) {
+      width: calc(100vw - 48px);
+    }
   }
 }
