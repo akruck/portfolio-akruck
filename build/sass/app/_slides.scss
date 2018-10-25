@@ -9,7 +9,7 @@
 
     .bg-animation {
 
-      // contains the animation like a canvas
+      // the wrapper contains the animation like a canvas
       &__wrapper {
         height: 100vh;
         left: 0;
@@ -17,6 +17,11 @@
         position: fixed;
         top: 0;
         width: 100vw;
+
+
+        // ---------- ---------- ---------- ---------- ----------
+        // background position responsive
+        // ---------- ---------- ---------- ---------- ----------
 
         .bg-animation {
           background-image: url("../img/bg-landing.jpg");
