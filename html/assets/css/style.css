@@ -136,20 +136,29 @@ h1, h2, h3, h4, h5, h6 {
   .slide-01--landing .bg-animation__wrapper .bg-animation {
     background-image: url("../img/bg-landing.jpg");
     background-repeat: repeat;
-    background-position: center 132%;
-    background-size: contain;
+    background-position: 0 calc(50vh - 116px);
+    background-size: 100% auto;
     height: 100vh;
     left: 0;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100vw; }
-    @media (max-aspect-ratio: 1 / 1) {
-      .slide-01--landing .bg-animation__wrapper .bg-animation {
-        background-position: center 76%; } }
     @media (max-width: 1100px) {
       .slide-01--landing .bg-animation__wrapper .bg-animation {
-        background-position: center 112%; } }
+        background-position: 0 calc(50vh - 64px); } }
+    @media (max-width: 820px) {
+      .slide-01--landing .bg-animation__wrapper .bg-animation {
+        background-position: 0 calc(50vh - 116px); } }
+    @media (max-width: 1000px) and (max-aspect-ratio: 1 / 1) {
+      .slide-01--landing .bg-animation__wrapper .bg-animation {
+        background-position: 0 calc(50vh - 116px); } }
+    @media (max-width: 820px) and (max-aspect-ratio: 1 / 1) {
+      .slide-01--landing .bg-animation__wrapper .bg-animation {
+        background-position: 0 calc(50vh - 24px); } }
+    @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
+      .slide-01--landing .bg-animation__wrapper .bg-animation {
+        background-position: 0 calc(50vh - 24px); } }
   .slide-01--landing .bg-animation__wrapper .gate-dark {
     height: 100vw;
     left: 0;
@@ -188,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
       @media (max-width: 820px) and (max-aspect-ratio: 1 / 1) {
         .slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
           margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 120px); } }
-      @media (max-width: 420px) and (max-aspect-ratio: 1 / 1) {
+      @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
         .slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
           margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 228px); } }
     .slide-01--landing .bg-animation__wrapper .gate-dark--bottom svg {
@@ -221,6 +230,6 @@ h1, h2, h3, h4, h5, h6 {
       @media (max-width: 820px) and (max-aspect-ratio: 1 / 1) {
         .slide-01--landing .bg-animation__wrapper .gate-dark--bottom svg {
           margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px); } }
-      @media (max-width: 420px) and (max-aspect-ratio: 1 / 1) {
+      @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
         .slide-01--landing .bg-animation__wrapper .gate-dark--bottom svg {
           margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 240px); } }
