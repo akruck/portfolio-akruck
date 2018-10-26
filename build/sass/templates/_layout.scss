@@ -6,15 +6,12 @@ html {
  height: 100%;
 }
 body {
-  min-height: 100%;
-  overflow: hidden;
+  height: 100%;
+  overflow-y: auto;
 }
 main {
   opacity: 0;
-  height: 100vh;
-  overflow-y: auto;
   transition: opacity 0.4s 0.4s ease-in-out;
-  width: 100vw;
 }
 .svg-sprite {
     height: 0;
