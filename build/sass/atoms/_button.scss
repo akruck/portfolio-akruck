@@ -1,3 +1,36 @@
 // ---------- ---------- ---------- ---------- ----------
 // button
 // ---------- ---------- ---------- ---------- ----------
+
+.button {
+  background-color: $sand;
+  border: 1px solid $grey--dark;
+  border-radius: 8px;
+  color: $grey--darker;
+  display: inline-block;
+  font-size: 16px;
+  height: 48px;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &__copy {
+    display: inline-block;
+    line-height: 24px;
+  }
+
+  &__icon, &__icon svg {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+
+    vertical-align: middle;
+  }
+  &__link {
+    background: transparent;
+    border: none;
+  }
+  &__invert {
+    color: $skin--light;
+  }
+}

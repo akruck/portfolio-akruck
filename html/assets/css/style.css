@@ -32,6 +32,31 @@
   100% {
     opacity: 1; } }
 
+.button {
+  background-color: #C1A991;
+  border: 1px solid #4E5457;
+  border-radius: 8px;
+  color: #201E22;
+  display: inline-block;
+  font-size: 16px;
+  height: 48px;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase; }
+  .button__copy {
+    display: inline-block;
+    line-height: 24px; }
+  .button__icon, .button__icon svg {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle; }
+  .button__link {
+    background: transparent;
+    border: none; }
+  .button__invert {
+    color: #F0E0D3; }
+
 .btn-hexagon {
   fill: none;
   stroke: #BEAB43;
@@ -51,20 +76,27 @@
   stroke-linecap: round;
   width: 24px; }
   .icon--invert {
-    color: #D9BDAD; }
+    stroke: #D9BDAD; }
 
 @font-face {
-  font-family: "exo-2";
+  font-family: "exo-2--thin";
   font-weight: 100;
   src: url("../fonts/Exo_2/Exo2-Thin.eot");
   src: url("../fonts/Exo_2/Exo2-Thin.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Thin.woff") format("woff"), url("../fonts/Exo_2/Exo2-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "exo-2";
+  font-weight: 200;
+  src: url("../fonts/Exo_2/Exo2-Light.eot");
+  src: url("../fonts/Exo_2/Exo2-Light.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Light.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Light.woff") format("woff"), url("../fonts/Exo_2/Exo2-Light.ttf") format("truetype"); }
 
 * {
   font-family: exo-2, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-weight: normal; }
 
 .text-light {
   color: #F0E0D3; }
