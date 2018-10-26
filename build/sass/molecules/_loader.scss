@@ -57,8 +57,10 @@
     opacity: 1;
   }
   .loader {
+
     .btn-hexagon {
       opacity: 0;
+      display: none;
 
       &__arrow {
         opacity: 0;

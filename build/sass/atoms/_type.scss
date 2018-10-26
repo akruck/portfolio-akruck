@@ -2,6 +2,10 @@
 // type
 // ---------- ---------- ---------- ---------- ----------
 
+
+// font faces
+// ---------- ---------- ---------- ---------- ----------
+
 @font-face {
   font-family: "exo-2--thin";
   font-weight: 100;
@@ -37,14 +41,38 @@
 //   font-weight: 800;
 //   src: url("../fonts/Exo_2/Exo2-Black.eot");
 //   src: url("../fonts/Exo_2/Exo2-Black.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Black.woff2") format("woff2"), url("../fonts/Exo_2/Exo2-Black.woff") format("woff"), url("../fonts/Exo_2/Exo2-Black.ttf") format("truetype"); }
+
+
+// global font family
+// ---------- ---------- ---------- ---------- ----------
+
 * {
    font-family: exo-2, sans-serif;
   }
+
+
+// basic font sizes
+// ---------- ---------- ---------- ---------- ----------
+
 h1, h2, h3, h4, h5, h6 {
  margin: 0;
  padding: 0;
  font-weight: normal;
 }
-.text-light {
-  color: $skin--light;
+p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+// text helper classes
+// ---------- ---------- ---------- ---------- ----------
+
+.text {
+    &--light {
+      color: $skin;
+    }
+    &--uppercase {
+      text-transform: uppercase;
+    }
 }

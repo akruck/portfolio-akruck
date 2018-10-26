@@ -23,10 +23,10 @@ main {
 // content area
 // ---------- ---------- ---------- ---------- ----------
 .content {
-  &-wrapper {
+  &__wrapper {
     width: 100%;
   }
-  &-area {
+  &__area {
     width: 1272px;
     margin: 0 auto;
 
@@ -43,4 +43,34 @@ main {
       width: calc(100vw - 48px);
     }
   }
+}
+
+// ---------- ---------- ---------- ---------- ----------
+// grid
+// ---------- ---------- ---------- ---------- ----------
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+// col general attributes and values
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  padding: 0 12px;
 }
