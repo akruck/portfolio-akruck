@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "exo-2";
+  font-weight: 100;
+  src: url("../fonts/Exo_2/Exo2-Thin.eot");
+  src: url("../fonts/Exo_2/Exo2-Thin.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Thin.woff") format("woff"), url("../fonts/Exo_2/Exo2-Thin.ttf") format("truetype"); }
+
+* {
+  font-family: exo-2, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+.text-light {
+  color: #F0E0D3; }
+
 html {
   background-color: #4E5457;
   height: 100%; }
@@ -84,22 +100,6 @@ main {
   @media (max-width: 576px) {
     .content-area {
       width: calc(100vw - 48px); } }
-
-@font-face {
-  font-family: "exo-2";
-  font-weight: 100;
-  src: url("../fonts/Exo_2/Exo2-Thin.eot");
-  src: url("../fonts/Exo_2/Exo2-Thin.eot?#iefix") format("eot"), url("../fonts/Exo_2/Exo2-Thin.woff") format("woff"), url("../fonts/Exo_2/Exo2-Thin.ttf") format("truetype"); }
-
-* {
-  font-family: exo-2, sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0; }
-
-.text-light {
-  color: #F0E0D3; }
 
 .btn-hexagon {
   fill: none;
