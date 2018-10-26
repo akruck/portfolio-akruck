@@ -1,13 +1,27 @@
+// ---------- ---------- ---------- ---------- ----------
 // style
-//------------------------
+// ---------- ---------- ---------- ---------- ----------
 
-// basics
-@import 'basics/colour';
-@import 'basics/type';
-@import 'basics/icons';
-@import 'basics/layout';
-@import 'basics/button-hexagon';
-@import 'basics/animations';
+// atoms
+// ---------- ---------- ---------- ---------- ----------
 
-// app
-@import 'app/slides';
+// variables
+@import 'atoms/colour';
+
+//basics
+@import 'atoms/animations';
+@import 'atoms/button';
+@import 'atoms/button--hexagon';
+@import 'atoms/icon';
+@import 'atoms/type';
+
+// molecules
+// ---------- ---------- ---------- ---------- ----------
+
+// organisms
+// ---------- ---------- ---------- ---------- ----------
+
+// templates
+// ---------- ---------- ---------- ---------- ----------
+@import 'templates/slides';
+@import 'templates/layout';

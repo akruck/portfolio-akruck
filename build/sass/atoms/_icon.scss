@@ -1,0 +1,17 @@
+// ---------- ---------- ---------- ---------- ----------
+// icon
+// ---------- ---------- ---------- ---------- ----------
+
+.icon {
+  color: $grey--darker;
+  display: inline-block;
+  fill: transparent;
+  height: 24px;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  width: 24px;
+
+  &--invert {
+    color: $skin;
+  }
+}
