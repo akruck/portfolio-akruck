@@ -1,0 +1,81 @@
+// ---------- ---------- ---------- ---------- ----------
+// loader
+// ---------- ---------- ---------- ---------- ----------
+
+.loader {
+  .btn-hexagon {
+    height: 12.8vh;
+    opacity: 1;
+    position: fixed;
+    right: 32vw;
+    top: 48vh;
+    width: 11.2vh;
+
+    transition: opacity 0.8s ease-out;
+    transition-delay: 0.4s;
+
+    animation: blend-in 0.4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    &__arrow {
+      height: 4.8vh;
+      opacity: 1;
+      position: fixed;
+      right: 32vw;
+      width: 11.2vh;
+
+      transition: opacity 0.8s ease-out;
+      transition-delay: 0.4s;
+
+      &--up {
+        top: 45.3vh;
+
+        animation: pulse--top 2.4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      &--down {
+        top: 58.8vh;
+
+        animation: pulse--bottom 2.4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}
+
+
+// animation loaded
+// ---------- ---------- ---------- ---------- ----------
+
+
+.loaded {
+  main {
+    opacity: 1;
+  }
+  .loader {
+    .btn-hexagon {
+      opacity: 0;
+
+      &__arrow {
+        opacity: 0;
+
+        &--up {
+          animation: raise--top 0.48s;
+          animation-timing-function: ease-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+        &--down {
+          animation: fall--bottom 0.48s;
+          animation-timing-function: ease-out;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+}
