@@ -202,7 +202,7 @@
   // ---------- ---------- ---------- ---------- ----------
 
   &-02 {
-    background-color: $grey--dark;
+    background: linear-gradient(48deg, $grey--darker, $grey--dark);
     display: block;
     height: 100vh;
     width: 100vw;
@@ -216,14 +216,13 @@
       }
     }
     h1 {
+      color: $apple-green;
       font-size: 32px;
-      line-height: 40px;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
     }
     h2 {
       font-size: 20px;
-      line-height: 24px;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
     }
   }
 }

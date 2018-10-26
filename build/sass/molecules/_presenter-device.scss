@@ -4,7 +4,6 @@
 
 .device {
   &__wrapper {
-    background-color: green;
     height: 100vh;
 
     margin-left: calc((50vw - (#{$content-width--xl} / 2)) * -1);
@@ -23,11 +22,60 @@
     }
 
     overflow: hidden;
+    perspective: 50vh;
     width: 50vw;
+
+    @media (max-width: $breakpoint--sm) {
+      height: 50vh;
+      width: 100vw;
+    }
+  }
+  &__body {
+    animation: rotate__device 1s ease-in-out;
+    animation-fill-mode: forwards;
+    background: linear-gradient(48deg, $grey--darker, $grey--dark);
+    border: 1px solid rgba($apple-green, 0.64);
+    border-radius: 4vh;
+    display: inline-block;
+    margin-top: -8vh;
+    margin-left: 6.4vw;
+    padding: 2vh 4.8vh;
+    position: relative;
+    width: 72%;
+
+    @media (max-aspect-ratio: 1/1) {
+      border-radius: 1.6vh;
+      margin-top: -4vh;
+      padding: 1vh 2vh;
+    }
+    @media (max-width: $breakpoint--sm) {
+      margin-top: 4vh;
+      width: 48%;
+    }
+  }
+  &__display {
+    background-color: $grey--dark;
+    border-radius: 0.32vh;
+    box-shadow: 0 0 8px 0 rgba($grey--darker, 0.2);
+    margin-top: -2px;
+    overflow: hidden;
+    padding: 0.1vh;
   }
   &__image {
     img {
-      max-width: 100%;
+      width: 100%;
+      opacity: 0.8;
     }
+  }
+  &__shadow {
+    background-color:rgba($grey--darker, 0.48);
+    box-shadow: 0 0 2vh 1vh rgba($grey--darker, 0.48);
+    border-radius: 4vh;
+    height: 1vh;
+    left: 1vh;
+    margin-top: 40px;
+    position: absolute;
+    right: 1vh;
+    top: 100%;
   }
 }
