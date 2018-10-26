@@ -187,5 +187,17 @@
         }
       }
     }
+
+    // button scroll down
+    // ---------- ---------- ---------- ---------- ----------
+    .button {
+      &--scroll-down {
+        position: relative;
+
+        &__wrapper {
+          margin-top: 120px;
+        }
+      }
+    }
   }
 }
