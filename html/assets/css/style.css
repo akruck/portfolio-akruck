@@ -163,6 +163,28 @@ p {
       animation-iteration-count: 1;
       animation-fill-mode: forwards; }
 
+.device__wrapper {
+  background-color: green;
+  height: 100vh;
+  margin-left: calc((50vw - (1272px / 2)) * -1);
+  overflow: hidden;
+  width: 50vw; }
+  @media (max-width: 1386px) {
+    .device__wrapper {
+      margin-left: calc((50vw - (936px / 2)) * -1); } }
+  @media (max-width: 992px) {
+    .device__wrapper {
+      margin-left: calc((50vw - (648px / 2)) * -1); } }
+  @media (max-width: 768px) {
+    .device__wrapper {
+      margin-left: calc((50vw - (calc(100vw - 64px) / 2)) * -1); } }
+  @media (max-width: 576px) {
+    .device__wrapper {
+      margin-left: calc((50vw - (calc(100vw - 48px) / 2)) * -1); } }
+
+.device__image img {
+  max-width: 100%; }
+
 .slide-01--landing .bg-animation__wrapper {
   height: 100vh;
   overflow: hidden;

@@ -1,3 +1,33 @@
 // ---------- ---------- ---------- ---------- ----------
 // presenter-device
 // ---------- ---------- ---------- ---------- ----------
+
+.device {
+  &__wrapper {
+    background-color: green;
+    height: 100vh;
+
+    margin-left: calc((50vw - (#{$content-width--xl} / 2)) * -1);
+
+    @media (max-width: $breakpoint--lg) {
+      margin-left: calc((50vw - (#{$content-width--lg} / 2)) * -1);
+    }
+    @media (max-width: $breakpoint--md) {
+      margin-left: calc((50vw - (#{$content-width--md} / 2)) * -1);
+    }
+    @media (max-width: $breakpoint--sm) {
+      margin-left: calc((50vw - (#{$content-width--sm} / 2)) * -1);
+    }
+    @media (max-width: $breakpoint--xs) {
+      margin-left: calc((50vw - (#{$content-width--xs} / 2)) * -1);
+    }
+
+    overflow: hidden;
+    width: 50vw;
+  }
+  &__image {
+    img {
+      max-width: 100%;
+    }
+  }
+}

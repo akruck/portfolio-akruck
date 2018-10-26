@@ -27,20 +27,20 @@ main {
     width: 100%;
   }
   &__area {
-    width: 1272px;
+    width: $content-width--xl;
     margin: 0 auto;
 
-    @media (max-width: 1386px) {
-      width: 936px;
+    @media (max-width: $breakpoint--lg) {
+      width: $content-width--lg;
     }
-    @media (max-width: 992px) {
-      width: 648px;
+    @media (max-width: $breakpoint--md) {
+      width: $content-width--md;
     }
-    @media (max-width: 768px) {
-      width: calc(100vw - 64px);
+    @media (max-width: $breakpoint--sm) {
+      width: $content-width--sm;
     }
-    @media (max-width: 576px) {
-      width: calc(100vw - 48px);
+    @media (max-width: $breakpoint--xs) {
+      width: $content-width--xs;
     }
   }
 }
