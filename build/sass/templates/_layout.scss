@@ -50,6 +50,7 @@ main {
 // grid
 // ---------- ---------- ---------- ---------- ----------
 
+// flex
 .d-flex {
   display: flex;
 }
@@ -62,6 +63,8 @@ main {
   -ms-flex-pack: center!important;
   justify-content: center!important;
 }
+
+// col general attributes and values
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,7 +74,6 @@ main {
   margin-left: -12px;
   margin-right: 12px;
 }
-// col general attributes and values
 .col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;

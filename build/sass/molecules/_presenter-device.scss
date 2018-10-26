@@ -25,7 +25,7 @@
     perspective: 50vh;
     width: 50vw;
 
-    @media (max-width: $breakpoint--sm) {
+    @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
       height: 50vh;
       width: 100vw;
     }
@@ -48,9 +48,10 @@
       margin-top: -4vh;
       padding: 1vh 2vh;
     }
-    @media (max-width: $breakpoint--sm) {
-      margin-top: 4vh;
-      width: 48%;
+    @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+      margin-left: 0;
+      margin-top: 0;
+      width: 56%;
     }
   }
   &__display {
