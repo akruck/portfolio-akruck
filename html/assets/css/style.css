@@ -156,7 +156,9 @@ h1, h2, h3, h4, h5, h6 {
       animation-fill-mode: forwards; }
 
 .slide-01--landing .bg-animation__wrapper {
-  height: 200vh;
+  background-color: #BEAB43;
+  height: 100vh;
+  overflow: hidden;
   width: 100vw; }
   .slide-01--landing .bg-animation__wrapper .bg-animation {
     background-image: url("../img/bg-landing.jpg");
@@ -166,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     left: 0;
     overflow: hidden;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100vw; }
     @media (max-width: 1100px) {
@@ -185,9 +187,10 @@ h1, h2, h3, h4, h5, h6 {
       .slide-01--landing .bg-animation__wrapper .bg-animation {
         background-position: 0 calc(50vh - 24px); } }
   .slide-01--landing .bg-animation__wrapper .gate-dark {
-    height: 100vw;
+    height: 100vh;
     left: 0;
-    position: fixed;
+    overflow: hidden;
+    position: absolute;
     top: 0;
     width: 100vw; }
     .slide-01--landing .bg-animation__wrapper .gate-dark svg {
@@ -287,17 +290,28 @@ h1, h2, h3, h4, h5, h6 {
   .slide-01--landing .button--scroll-down__wrapper {
     margin-top: 120px; }
 
+.slide-02 {
+  background-color: #D9BDAD;
+  display: block;
+  height: 100vh;
+  width: 100vw; }
+
 html {
   background-color: #201E22;
   height: 100%; }
 
 body {
-  min-height: 100%;
-  overflow: hidden; }
+  height: 100%;
+  overflow-y: auto; }
 
 main {
   opacity: 0;
   transition: opacity 0.4s 0.4s ease-in-out; }
+
+.svg-sprite {
+  height: 0;
+  width: 0;
+  overflow: hidden; }
 
 .content-wrapper {
   width: 100%; }
