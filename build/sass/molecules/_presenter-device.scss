@@ -6,19 +6,56 @@
   &__wrapper {
     height: 100vh;
 
-    margin-left: calc((50vw - (#{$content-width--xl} / 2)) * -1);
+    &--rotate {
+      margin-left: calc((50vw - (#{$content-width--xl} / 2)) * -1);
 
-    @media (max-width: $breakpoint--lg) {
-      margin-left: calc((50vw - (#{$content-width--lg} / 2)) * -1);
-    }
-    @media (max-width: $breakpoint--md) {
-      margin-left: calc((50vw - (#{$content-width--md} / 2)) * -1);
-    }
-    @media (max-width: $breakpoint--sm) {
-      margin-left: calc((50vw - (#{$content-width--sm} / 2)) * -1);
-    }
-    @media (max-width: $breakpoint--xs) {
-      margin-left: calc((50vw - (#{$content-width--xs} / 2)) * -1);
+      @media (max-width: $breakpoint--lg) {
+        margin-left: calc((50vw - (#{$content-width--lg} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--md) {
+        margin-left: calc((50vw - (#{$content-width--md} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--sm) {
+        margin-left: calc((50vw - (#{$content-width--sm} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--xs) {
+        margin-left: calc((50vw - (#{$content-width--xs} / 2)) * -1);
+      }
+
+      .device__body {
+        animation: rotate__device 1s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
+      // reverse
+      // ---------- ---------- ---------- ---------- ----------
+
+      &-reverse {
+
+        margin-left: 0;
+        margin-right: calc((50vw - (#{$content-width--xl} / 2)) * -1);
+
+        @media (max-width: $breakpoint--lg) {
+          margin-left: 0;
+          margin-right: calc((50vw - (#{$content-width--lg} / 2)) * -1);
+        }
+        @media (max-width: $breakpoint--md) {
+          margin-left: 0;
+          margin-right: calc((50vw - (#{$content-width--md} / 2)) * -1);
+        }
+        @media (max-width: $breakpoint--sm) {
+          margin-left: 0;
+          margin-right: calc((50vw - (#{$content-width--sm} / 2)) * -1);
+        }
+        @media (max-width: $breakpoint--xs) {
+          margin-left: 0;
+          margin-right: calc((50vw - (#{$content-width--xs} / 2)) * -1);
+        }
+        .device__body {
+          animation: rotate__device--reverse 1s ease-in-out;
+          animation-fill-mode: forwards;
+        }
+      }
     }
 
     overflow: hidden;
@@ -31,16 +68,13 @@
     }
   }
   &__body {
-    animation: rotate__device 1s ease-in-out;
-    animation-fill-mode: forwards;
     background: linear-gradient(48deg, $grey--darker, $grey--dark);
     border-radius: 3.2vh;
     display: inline-block;
     margin-top: -8vh;
-    margin-left: 6.4vw;
     padding: 2vh 4.8vh;
     position: relative;
-    width: 72%;
+    width: 64%;
 
     @media (max-aspect-ratio: 1/1) {
       border-radius: 1.2vh;

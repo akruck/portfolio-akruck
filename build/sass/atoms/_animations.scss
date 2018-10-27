@@ -78,3 +78,16 @@
     transform-style: flat;
   }
 }
+
+@keyframes rotate__device--reverse {
+  0% {
+    transform:          rotateY(0deg);
+    -webkit-transform:  rotateY(0deg);
+    transform-style: flat;
+  }
+  100% {
+    transform:          rotateY(-10deg);
+    -webkit-transform:  rotateY(-10deg);
+    transform-style: flat;
+  }
+}
