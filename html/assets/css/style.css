@@ -340,7 +340,7 @@ h3 {
   overflow: hidden;
   padding: 0.2vh; }
 
-.device__image img {
+.device__image img, .device__image video {
   width: 100%;
   opacity: 0.8; }
 
@@ -434,12 +434,12 @@ h3 {
       top: 0;
       width: 100vw; }
       .slide-01--landing .bg-animation__wrapper .gate-dark svg {
-        filter: drop-shadow(0px 0px 12px black);
         height: 2000px;
         margin-top: calc(((2000px - 100vh) / 2 ) * -1);
         margin-left: calc(((2000px - 100vw) / 2 ) * -1);
         width: 2000px; }
       .slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
+        filter: drop-shadow(0px 0px 12px black);
         fill: url(#svg-gradiant--grey-dark) #4E5457;
         margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 40px);
         margin-left: calc((((2000px - 100vw) / 2 ) * -1) + 12px);
