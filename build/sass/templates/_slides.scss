@@ -224,10 +224,25 @@
       color: $apple-green;
       font-size: 32px;
       margin-bottom: 24px;
+
+      @media (max-width: $breakpoint--sm) {
+        font-size: 28px;
+        margin-bottom: 16px;
+      }
     }
     h2 {
       font-size: 20px;
       margin-bottom: 24px;
+
+      @media (max-width: $breakpoint--sm) {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+    }
+    @media (max-width: $breakpoint--sm) {
+      p {
+        font-size: 14px;
+      }
     }
   }
 }

@@ -9,7 +9,6 @@
   color: $grey--darker;
   display: inline-block;
   font-size: 16px;
-  height: 48px;
   padding: 12px 24px;
   text-align: center;
   text-transform: uppercase;
@@ -17,11 +16,15 @@
   &__copy {
     display: inline-block;
     line-height: 24px;
+    vertical-align: middle;
   }
 
   &__icon, &__icon svg {
     display: inline-block;
     vertical-align: middle;
+  }
+  &__outline {
+    background-color: transparent;
   }
   &__link {
     background: transparent;
@@ -33,6 +36,6 @@
     }
   }
   &__invert {
-    color: $skin--light;
+    color: $skin;
   }
 }
