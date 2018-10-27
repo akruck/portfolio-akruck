@@ -48,16 +48,30 @@
 }
 
 
+// slides
+// ---------- ---------- ---------- ---------- ----------
+.slide.slide {
+  &--02, &--03, &--04 {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
 // animation loaded
 // ---------- ---------- ---------- ---------- ----------
 
 
 .loaded {
-  main {
-    opacity: 1;
-  }
-  .loader {
 
+  .slide.slide {
+    &--02, &--03, &--04, &--05 {
+      opacity: 1;
+      display: block;
+    }
+  }
+
+  .loader {
     .btn-hexagon {
       opacity: 0;
       display: none;

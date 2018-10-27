@@ -243,8 +243,13 @@ h3 {
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite; }
 
-.loaded main {
-  opacity: 1; }
+.slide.slide--02, .slide.slide--03, .slide.slide--04 {
+  opacity: 0;
+  display: none; }
+
+.loaded .slide.slide--02, .loaded .slide.slide--03, .loaded .slide.slide--04, .loaded .slide.slide--05 {
+  opacity: 1;
+  display: block; }
 
 .loaded .loader .btn-hexagon {
   opacity: 0;
@@ -561,7 +566,6 @@ body {
 
 main {
   overflow: hidden;
-  opacity: 0;
   transition: opacity 0.4s 0.4s ease-in-out; }
 
 .svg-sprite {
