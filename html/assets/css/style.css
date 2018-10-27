@@ -49,13 +49,13 @@
   color: #201E22;
   display: inline-block;
   font-size: 16px;
-  height: 48px;
   padding: 12px 24px;
   text-align: center;
   text-transform: uppercase; }
   .button__copy {
     display: inline-block;
-    line-height: 24px; }
+    line-height: 24px;
+    vertical-align: middle; }
   .button__icon, .button__icon svg {
     display: inline-block;
     vertical-align: middle; }
@@ -68,7 +68,7 @@
     .button__link:focus {
       outline: none; }
   .button__invert {
-    color: #F0E0D3; }
+    color: #D9BDAD; }
 
 .btn-hexagon {
   fill: none;
@@ -93,6 +93,8 @@
   .icon--48x48px {
     height: 48px;
     width: 48px; }
+  .icon__chevron-left {
+    transform: rotate(-90deg); }
 
 @font-face {
   font-family: "exo-2--thin";
@@ -245,6 +247,12 @@ p {
   position: absolute;
   right: 1vh;
   top: 100%; }
+
+.toolbar {
+  margin-top: 8px;
+  margin-left: -12px;
+  margin-right: -12px;
+  padding: 12px; }
 
 .slide-01--landing .bg-animation__wrapper {
   height: 100vh;
