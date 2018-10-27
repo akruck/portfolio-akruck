@@ -34,8 +34,7 @@
     animation: rotate__device 1s ease-in-out;
     animation-fill-mode: forwards;
     background: linear-gradient(48deg, $grey--darker, $grey--dark);
-    border: 1px solid rgba($apple-green, 0.64);
-    border-radius: 4vh;
+    border-radius: 3.2vh;
     display: inline-block;
     margin-top: -8vh;
     margin-left: 6.4vw;
@@ -44,7 +43,7 @@
     width: 72%;
 
     @media (max-aspect-ratio: 1/1) {
-      border-radius: 1.6vh;
+      border-radius: 1.2vh;
       margin-top: -4vh;
       padding: 1vh 2vh;
     }
@@ -55,12 +54,12 @@
     }
   }
   &__display {
-    background-color: $grey--dark;
+    background-color: $grey--darker;
     border-radius: 0.32vh;
     box-shadow: 0 0 8px 0 rgba($grey--darker, 0.2);
     margin-top: -2px;
     overflow: hidden;
-    padding: 0.1vh;
+    padding: 0.2vh;
   }
   &__image {
     img {
