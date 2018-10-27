@@ -10,6 +10,11 @@
   -ms-flex-align: center!important;
   align-items: center!important;
 }
+.justify-content-start {
+  -webkit-box-pack: start!important;
+  -ms-flex-pack: start!important;
+  justify-content: flex-start!important;
+}
 .justify-content-center {
   -webkit-box-pack: center!important;
   -ms-flex-pack: center!important;

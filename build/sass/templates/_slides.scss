@@ -24,6 +24,9 @@
           flex-direction: column!important;
         }
       }
+      .text__wrapper {
+        max-width: 360px;
+      }
     }
   }
 
@@ -282,6 +285,41 @@
     .device {
       &__body {
       border: 1px solid rgba($apple-green, 0.64);
+      }
+    }
+  }
+
+
+  // ---------- ---------- ---------- ---------- ----------
+  // slide 04
+  // ---------- ---------- ---------- ---------- ----------
+
+  &--04 {
+    background: linear-gradient(45deg, $grey--darker, $grey--dark);
+
+    h1 {
+      color: $apple-green;
+    }
+    .device {
+      &__body {
+      border: 1px solid rgba($apple-green, 0.64);
+      }
+    }
+  }
+
+  // ---------- ---------- ---------- ---------- ----------
+  // slide 02
+  // ---------- ---------- ---------- ---------- ----------
+
+  &--05 {
+    ackground: linear-gradient(135deg, $grey--darker, $grey--dark);
+
+    h1 {
+      color: $orange--dark;
+    }
+    .device {
+      &__body {
+      border: 1px solid rgba($orange--dark, 0.64);
       }
     }
   }
