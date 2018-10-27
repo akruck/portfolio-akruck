@@ -10,21 +10,6 @@
   -ms-flex-align: center!important;
   align-items: center!important;
 }
-.justify-content-start {
-  -webkit-box-pack: start!important;
-  -ms-flex-pack: start!important;
-  justify-content: flex-start!important;
-}
-.justify-content-center {
-  -webkit-box-pack: center!important;
-  -ms-flex-pack: center!important;
-  justify-content: center!important;
-}
-.justify-content-end {
-  -webkit-box-pack: end!important;
-  -ms-flex-pack: end!important;
-  justify-content: flex-end!important;
-}
 
 // col general attributes and values
 .row {
@@ -44,6 +29,33 @@
   flex-grow: 1;
   max-width: 100%;
   padding: 0 12px;
+}
+.justify-content-start {
+  -webkit-box-pack: start!important;
+  -ms-flex-pack: start!important;
+  justify-content: flex-start!important;
+}
+.justify-content-center {
+  -webkit-box-pack: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+.justify-content-end {
+  -webkit-box-pack: end!important;
+  -ms-flex-pack: end!important;
+  justify-content: flex-end!important;
+}
+.flex-row-reverse {
+  -webkit-box-orient: horizontal!important;
+  -webkit-box-direction: reverse!important;
+  -ms-flex-direction: row-reverse!important;
+  flex-direction: row-reverse!important;
+}
+.flex-column-reverse {
+  -webkit-box-orient: vertical!important;
+  -webkit-box-direction: reverse!important;
+  -ms-flex-direction: column-reverse!important;
+  flex-direction: column-reverse!important;
 }
 
 // breakpoint sm

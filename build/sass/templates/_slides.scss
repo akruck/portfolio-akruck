@@ -30,6 +30,21 @@
     }
   }
 
+  &--reverse {
+    .content {
+      &__area {
+
+        > .row {
+
+          @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+            -ms-flex-direction: column-reverse!important;
+            flex-direction: column-reverse!important;
+          }
+        }
+      }
+    }
+  }
+
   h1 {
     margin-bottom: 24px;
 
@@ -298,11 +313,11 @@
     background: linear-gradient(45deg, $grey--darker, $grey--dark);
 
     h1 {
-      color: $apple-green;
+      color: $orange--dark;
     }
     .device {
       &__body {
-      border: 1px solid rgba($apple-green, 0.64);
+      border: 1px solid rgba($orange--dark, 0.64);
       }
     }
   }
@@ -312,14 +327,14 @@
   // ---------- ---------- ---------- ---------- ----------
 
   &--05 {
-    ackground: linear-gradient(135deg, $grey--darker, $grey--dark);
+    background: linear-gradient(135deg, $grey--darker, $grey--dark);
 
     h1 {
-      color: $orange--dark;
+      color: $apple-green;
     }
     .device {
       &__body {
-      border: 1px solid rgba($orange--dark, 0.64);
+      border: 1px solid rgba($apple-green, 0.64);
       }
     }
   }

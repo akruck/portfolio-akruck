@@ -25,6 +25,7 @@
       .device__body {
         animation: rotate__device 1s ease-in-out;
         animation-fill-mode: forwards;
+        margin-left: 4.8vw;
       }
 
       // reverse
@@ -54,6 +55,7 @@
         .device__body {
           animation: rotate__device--reverse 1s ease-in-out;
           animation-fill-mode: forwards;
+          margin-right: 4.8vw;
         }
       }
     }
