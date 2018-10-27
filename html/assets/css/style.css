@@ -47,6 +47,7 @@
   border: 1px solid #4E5457;
   border-radius: 8px;
   color: #201E22;
+  cursor: pointer;
   display: inline-block;
   font-size: 16px;
   padding: 12px 24px;
@@ -58,7 +59,8 @@
     vertical-align: middle; }
   .button__icon, .button__icon svg {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin-right: -4px; }
   .button__outline {
     background-color: transparent; }
   .button__link {
@@ -120,6 +122,15 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.4em; }
 
 p {
+  font-size: 16px; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
   font-size: 16px; }
 
 .text--light {
@@ -253,6 +264,30 @@ p {
   margin-left: -12px;
   margin-right: -12px;
   padding: 12px; }
+
+.slide h1 {
+  color: #BEAB43;
+  margin-bottom: 24px; }
+  @media (max-width: 768px) {
+    .slide h1 {
+      font-size: 28px;
+      margin-bottom: 16px; } }
+
+.slide h2 {
+  margin-bottom: 24px; }
+  @media (max-width: 768px) {
+    .slide h2 {
+      font-size: 16px;
+      margin-bottom: 16px; } }
+
+.slide h3 {
+  color: #8A837D; }
+
+@media (max-width: 768px) {
+  .slide p {
+    font-size: 14px; }
+  .slide .button__copy {
+    font-size: 14px; } }
 
 .slide-01--landing .bg-animation__wrapper {
   height: 100vh;
@@ -398,24 +433,6 @@ p {
       .slide-02 .content__area > .row {
         -ms-flex-direction: column !important;
         flex-direction: column !important; } }
-  .slide-02 h1 {
-    color: #BEAB43;
-    font-size: 32px;
-    margin-bottom: 24px; }
-    @media (max-width: 768px) {
-      .slide-02 h1 {
-        font-size: 28px;
-        margin-bottom: 16px; } }
-  .slide-02 h2 {
-    font-size: 20px;
-    margin-bottom: 24px; }
-    @media (max-width: 768px) {
-      .slide-02 h2 {
-        font-size: 16px;
-        margin-bottom: 16px; } }
-  @media (max-width: 768px) {
-    .slide-02 p {
-      font-size: 14px; } }
 
 html {
   background-color: #201E22;
