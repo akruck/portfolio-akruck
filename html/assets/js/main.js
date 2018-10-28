@@ -117,7 +117,7 @@ $(window).scroll(function(event) {
     if (el.visible(true)) {
       el.addClass("fadeIn");
     } else {
-      el.removeClass("fadeIn");
+      el.removeClass("visible");
     }
   });
 
