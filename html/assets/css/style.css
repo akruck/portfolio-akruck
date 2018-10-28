@@ -89,7 +89,7 @@
   .btn-hexagon__arrow {
     fill: none;
     stroke: #D9BDAD;
-    stroke-width: 1;
+    stroke-width: 0.64;
     stroke-linecap: round; }
 
 .icon {
@@ -211,39 +211,25 @@ h3 {
     flex: 0 0 100%;
     max-width: 100%; } }
 
-.loader .btn-hexagon {
-  height: 12.8vh;
+.loader .btn-hexagon__arrow {
+  height: 96px;
   opacity: 1;
   position: fixed;
   right: 32vw;
-  top: 48vh;
-  width: 11.2vh;
+  width: 96px;
   z-index: 1;
   transition: opacity 0.8s ease-out;
-  transition-delay: 0.4s;
-  animation: blend-in 0.4s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; }
-  .loader .btn-hexagon__arrow {
-    height: 4.8vh;
-    opacity: 1;
-    position: fixed;
-    right: 32vw;
-    width: 11.2vh;
-    z-index: 1;
-    transition: opacity 0.8s ease-out;
-    transition-delay: 0.4s; }
-    .loader .btn-hexagon__arrow--up {
-      top: 45.3vh;
-      animation: pulse--top 2.4s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite; }
-    .loader .btn-hexagon__arrow--down {
-      top: 58.8vh;
-      animation: pulse--bottom 2.4s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite; }
+  transition-delay: 0.4s; }
+  .loader .btn-hexagon__arrow--up {
+    top: 45.3vh;
+    animation: pulse--top 2.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; }
+  .loader .btn-hexagon__arrow--down {
+    top: 58.8vh;
+    animation: pulse--bottom 2.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; }
 
 .slide.slide--02, .slide.slide--03, .slide.slide--04 {
   opacity: 0;

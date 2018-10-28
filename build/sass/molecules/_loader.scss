@@ -4,28 +4,13 @@
 
 .loader {
   .btn-hexagon {
-    height: 12.8vh;
-    opacity: 1;
-    position: fixed;
-    right: 32vw;
-    top: 48vh;
-    width: 11.2vh;
-    z-index: 1;
-
-    transition: opacity 0.8s ease-out;
-    transition-delay: 0.4s;
-
-    animation: blend-in 0.4s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 
     &__arrow {
-      height: 4.8vh;
+      height: 96px;
       opacity: 1;
       position: fixed;
       right: 32vw;
-      width: 11.2vh;
+      width: 96px;
       z-index: 1;
 
       transition: opacity 0.8s ease-out;
