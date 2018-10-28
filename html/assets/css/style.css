@@ -261,6 +261,9 @@ h3 {
     .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
       margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 228px); } }
 
+.slide.slide-01--landing .content__wrapper {
+  opacity: 0; }
+
 .loaded .slide.slide--02, .loaded .slide.slide--03, .loaded .slide.slide--04, .loaded .slide.slide--05 {
   opacity: 1;
   display: block; }
@@ -289,6 +292,9 @@ h3 {
   @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
     .loaded .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
       margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 228px); } }
+
+.loaded .slide.slide-01--landing .content__wrapper {
+  opacity: 1; }
 
 .loaded .loader .btn-hexagon {
   opacity: 0;
