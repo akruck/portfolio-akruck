@@ -19,10 +19,11 @@
     line-height: 24px;
     vertical-align: middle;
   }
-
   &__icon, &__icon svg {
     display: inline-block;
     vertical-align: middle;
+  }
+  &__icon svg {
     margin-right: -4px
   }
   &__outline {

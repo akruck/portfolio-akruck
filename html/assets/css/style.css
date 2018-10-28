@@ -69,7 +69,8 @@
     vertical-align: middle; }
   .button__icon, .button__icon svg {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle; }
+  .button__icon svg {
     margin-right: -4px; }
   .button__outline {
     background-color: transparent; }
@@ -225,10 +226,25 @@ h3 {
     .loader {
       left: calc(50vw + 36px);
       top: calc(928px - (2000px - 100vh) / 2); } }
+  @media (max-width: 1000px) and (max-aspect-ratio: 1 / 1) {
+    .loader {
+      left: calc(50vw + 136px);
+      top: calc(968px - (2000px - 100vh) / 2); } }
+  @media (max-width: 820px) and (max-aspect-ratio: 1 / 1) {
+    .loader {
+      left: calc(50vw + 36px);
+      top: calc(968px - (2000px - 100vh) / 2); } }
+  @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
+    .loader {
+      left: calc(50vw + 8px);
+      top: calc(1008px - (2000px - 100vh) / 2); } }
   .loader__wrapper {
     height: 208px;
     position: relative;
     width: 160px; }
+    @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
+      .loader__wrapper {
+        height: 128px; } }
   .loader .btn-hexagon__arrow {
     height: 96px;
     width: 96px;
@@ -271,10 +287,10 @@ h3 {
       margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 40px); } }
   @media (max-width: 820px) and (max-aspect-ratio: 1 / 1) {
     .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
-      margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 120px); } }
+      margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px); } }
   @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
     .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
-      margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 228px); } }
+      margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 208px); } }
 
 .slide.slide-01--landing .content__wrapper h1 {
   margin-top: 40px;
@@ -311,7 +327,7 @@ h3 {
       margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 120px); } }
   @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
     .loaded .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
-      margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 228px); } }
+      margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 196px); } }
 
 .loaded .slide.slide-01--landing .content__wrapper h1 {
   margin-top: 0; }
@@ -549,7 +565,7 @@ h3 {
             margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px); } }
         @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
           .slide-01--landing .bg-animation__wrapper .gate-dark--bottom svg {
-            margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 240px); } }
+            margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 208px); } }
   .slide-01--landing .content__wrapper {
     position: absolute;
     top: calc(50vh + 64px); }
