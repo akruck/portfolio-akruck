@@ -22,10 +22,29 @@
         margin-left: calc((50vw - (#{$content-width--xs} / 2)) * -1);
       }
 
-      .device__body {
-        animation: rotate__device 1s ease-in-out;
-        animation-fill-mode: forwards;
-        margin-left: 4.8vw;
+      .device {
+
+        &__body {
+          margin-left: 4.8vw;
+
+          transform:          rotateY(0deg);
+          -webkit-transform:  rotateY(0deg);
+          transform-style: flat;
+
+          transition: transform 1s ease-in-out;
+
+          &.visible {
+            transform:          rotateY(10deg);
+            -webkit-transform:  rotateY(10deg);
+            transform-style: flat;
+          }
+          &:hover {
+            transform:          rotateY(0deg);
+            -webkit-transform:  rotateY(0deg);
+            transform-style: flat;
+            transform:          scale(1.2)
+          }
+        }
       }
 
       // reverse
@@ -53,14 +72,29 @@
           margin-right: calc((50vw - (#{$content-width--xs} / 2)) * -1);
         }
         .device__body {
-          animation: rotate__device--reverse 1s ease-in-out;
-          animation-fill-mode: forwards;
           margin-right: 4.8vw;
+
+          transform:          rotateY(0deg);
+          -webkit-transform:  rotateY(0deg);
+          transform-style: flat;
+
+          transition: transform 1s ease-in-out;
+
+          &.visible {
+            transform:          rotateY(-10deg);
+            -webkit-transform:  rotateY(-10deg);
+            transform-style: flat;
+          }
+          &:hover {
+            transform:          rotateY(0deg);
+            -webkit-transform:  rotateY(0deg);
+            transform-style: flat;
+            transform:          scale(1.2)
+          }
         }
       }
     }
 
-    overflow: hidden;
     perspective: 50vh;
     width: 50vw;
 
@@ -70,10 +104,13 @@
     }
   }
   &__body {
+    animation: device__hover 4.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
     background: linear-gradient(48deg, $grey--darker, $grey--dark);
     border-radius: 3.2vh;
     display: inline-block;
-    margin-top: -8vh;
     padding: 2vh 4.8vh;
     position: relative;
     width: 32vw;
@@ -104,14 +141,16 @@
     }
   }
   &__shadow {
+    animation: device__shadow 4.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
     background-color:rgba($grey--darker, 0.48);
     box-shadow: 0 0 2vh 1vh rgba($grey--darker, 0.48);
     border-radius: 4vh;
     height: 1vh;
     left: 1vh;
-    margin-top: 40px;
     position: absolute;
     right: 1vh;
-    top: 100%;
   }
 }

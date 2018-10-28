@@ -115,7 +115,7 @@ $(window).scroll(function(event) {
   $(".device__body").each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
-      el.addClass("fadeIn");
+      el.addClass("visible");
     } else {
       el.removeClass("visible");
     }
