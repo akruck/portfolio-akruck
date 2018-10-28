@@ -1,30 +1,30 @@
 @keyframes pulse--top {
   0% {
-    margin-top: 0; }
+    top: -24px; }
   50% {
-    margin-top: -2vh; }
+    top: -48px; }
   100% {
-    margin-top: 0; } }
+    top: -24px; } }
 
 @keyframes pulse--bottom {
   0% {
-    margin-top: 0; }
+    bottom: -24px; }
   50% {
-    margin-top: 2vh; }
+    bottom: -48px; }
   100% {
-    margin-top: 0; } }
+    bottom: -24px; } }
 
 @keyframes raise--top {
   0% {
-    margin-top: 0; }
+    top: -24px; }
   100% {
-    margin-top: -60vh; } }
+    top: -100vh; } }
 
 @keyframes fall--bottom {
   0% {
-    margin-top: 0; }
+    bottom: -24px; }
   100% {
-    margin-top: 60vh; } }
+    bottom: -100vh; } }
 
 @keyframes blend-in {
   0% {
@@ -211,25 +211,32 @@ h3 {
     flex: 0 0 100%;
     max-width: 100%; } }
 
-.loader .btn-hexagon__arrow {
-  height: 96px;
+.loader {
   opacity: 1;
   position: fixed;
-  right: 32vw;
-  width: 96px;
-  z-index: 1;
-  transition: opacity 0.8s ease-out;
-  transition-delay: 0.4s; }
-  .loader .btn-hexagon__arrow--up {
-    top: 45.3vh;
-    animation: pulse--top 2.4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite; }
-  .loader .btn-hexagon__arrow--down {
-    top: 58.8vh;
-    animation: pulse--bottom 2.4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite; }
+  left: calc(50vw + 216px);
+  top: calc(1048px - (2000px - 100vh) / 2);
+  z-index: 1; }
+  .loader__wrapper {
+    height: 208px;
+    position: relative;
+    width: 160px; }
+  .loader .btn-hexagon__arrow {
+    height: 96px;
+    width: 96px;
+    position: absolute;
+    left: 50%;
+    margin-left: -48px;
+    transition: opacity 0.8s ease-out;
+    transition-delay: 0.4s; }
+    .loader .btn-hexagon__arrow--up {
+      animation: pulse--top 2.4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite; }
+    .loader .btn-hexagon__arrow--down {
+      animation: pulse--bottom 2.4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite; }
 
 .slide.slide--02, .slide.slide--03, .slide.slide--04 {
   opacity: 0;
@@ -261,8 +268,13 @@ h3 {
     .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
       margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 228px); } }
 
-.slide.slide-01--landing .content__wrapper {
-  opacity: 0; }
+.slide.slide-01--landing .content__wrapper h1 {
+  margin-top: 40px;
+  transition: margin-top 0.8s ease-out; }
+
+.slide.slide-01--landing .content__wrapper .button--scroll-down__wrapper {
+  opacity: 0;
+  transition: opacity 0.8s 0.8s ease-out; }
 
 .loaded .slide.slide--02, .loaded .slide.slide--03, .loaded .slide.slide--04, .loaded .slide.slide--05 {
   opacity: 1;
@@ -293,24 +305,24 @@ h3 {
     .loaded .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
       margin-left: calc((((2000px - 100vw) / 2 ) * -1) - 228px); } }
 
-.loaded .slide.slide-01--landing .content__wrapper {
+.loaded .slide.slide-01--landing .content__wrapper h1 {
+  margin-top: 0; }
+
+.loaded .slide.slide-01--landing .content__wrapper .button--scroll-down__wrapper {
   opacity: 1; }
 
-.loaded .loader .btn-hexagon {
-  opacity: 0;
-  display: none; }
-  .loaded .loader .btn-hexagon__arrow {
-    opacity: 0; }
-    .loaded .loader .btn-hexagon__arrow--up {
-      animation: raise--top 0.48s;
-      animation-timing-function: ease-out;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards; }
-    .loaded .loader .btn-hexagon__arrow--down {
-      animation: fall--bottom 0.48s;
-      animation-timing-function: ease-out;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards; }
+.loaded .loader .btn-hexagon__arrow {
+  opacity: 0; }
+  .loaded .loader .btn-hexagon__arrow--up {
+    animation: raise--top 0.96s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
+  .loaded .loader .btn-hexagon__arrow--down {
+    animation: fall--bottom 0.96s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
 
 .device__wrapper {
   height: 100vh;
