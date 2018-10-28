@@ -4,7 +4,7 @@
     "gulp-ttf2woff": "^1.1.1"
   },
   "dependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.26.3",
     "gulp-inject": "^4.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-svgmin": "^1.2.4",

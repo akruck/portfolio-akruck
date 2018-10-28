@@ -2,6 +2,9 @@
 // button
 // ---------- ---------- ---------- ---------- ----------
 
+a.button {
+  text-decoration: none;
+}
 .button {
   background-color: $sand;
   border: 1px solid $grey--dark;

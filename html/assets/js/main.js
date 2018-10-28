@@ -1,4 +1,10 @@
+// ---------- ---------- ---------- ---------- ----------
+// loader
+// ---------- ---------- ---------- ---------- ----------
+
+
 // Fade Out function
+// ---------- ---------- ---------- ---------- ----------
 function fadeOut(ms, el) {
   var opacity  = 1,
       interval = 50,
@@ -17,6 +23,7 @@ function fadeOut(ms, el) {
 }
 
 // Define transition function
+// ---------- ---------- ---------- ---------- ----------
 function loaded() {
   // Define our variables
   var docBody  = document.body,
@@ -48,3 +55,22 @@ function loaded() {
 
 // Fire transition function
 window.onload = loaded;
+
+
+// ---------- ---------- ---------- ---------- ----------
+// smooth scrolling
+// ---------- ---------- ---------- ---------- ----------
+
+// Tania - https://codepen.io/taniarascia/
+// https://codepen.io/taniarascia/pen/MJEXZj
+$(function() {
+  $("button[href^='#']").click(function(e) {
+  	e.preventDefault();
+
+  	var position = $($(this).attr("href")).offset().top;
+
+  	$("body, html").animate({
+  		scrollTop: position
+  	} , 1600 );
+  });
+});

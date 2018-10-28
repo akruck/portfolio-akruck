@@ -52,6 +52,9 @@
     -webkit-transform: rotateY(-10deg);
     transform-style: flat; } }
 
+a.button {
+  text-decoration: none; }
+
 .button {
   background-color: #C1A991;
   border: 1px solid #4E5457;
