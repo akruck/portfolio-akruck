@@ -81,6 +81,16 @@ a.button {
       outline: none; }
   .button__invert {
     color: #D9BDAD; }
+  .button__scroll {
+    border-radius: 50%;
+    line-height: 24px;
+    padding: 8px; }
+    .button__scroll span {
+      display: inline-block;
+      height: 24px;
+      width: 24px; }
+      .button__scroll span svg {
+        margin-right: 0; }
 
 .btn-hexagon {
   fill: none;
@@ -482,6 +492,28 @@ h3 {
         flex-direction: column !important; } }
   .slide .content__area .text__wrapper {
     max-width: 360px; }
+    .slide .content__area .text__wrapper .button__scroll {
+      border-color: #61696d;
+      bottom: 48px;
+      opacity: 0;
+      position: fixed;
+      right: 24px;
+      z-index: 2;
+      transition: opacity 0.8s ease-in-out, bottom 0.8s ease-in-out; }
+      @media (max-width: 576px) {
+        .slide .content__area .text__wrapper .button__scroll {
+          right: 12px; } }
+    .slide .content__area .text__wrapper .button__rotate {
+      transform: rotate(0deg);
+      transition: transform 0.8s ease-in-out; }
+    .slide .content__area .text__wrapper.active .button__scroll {
+      bottom: 24px;
+      opacity: 1; }
+      @media (max-width: 576px) {
+        .slide .content__area .text__wrapper.active .button__scroll {
+          bottom: 12px; } }
+    .slide .content__area .text__wrapper.active .button__rotate {
+      transform: rotate(180deg); }
   @media (max-width: 576px) and (max-aspect-ratio: 1 / 1) {
     .slide--reverse .content__area > .row {
       -ms-flex-direction: column-reverse !important;
