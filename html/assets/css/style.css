@@ -357,6 +357,22 @@ h3 {
     animation-iteration-count: 1;
     animation-fill-mode: forwards; }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  left: 0; }
+  .navbar .navbar__bg svg {
+    fill: rgba(32, 30, 34, 0.9);
+    stroke-width: 1;
+    position: fixed;
+    top: -2px;
+    right: 33.333334vw;
+    height: 42px; }
+  .navbar__nav {
+    line-height: 24px;
+    padding: 8px 0; }
+
 .device__wrapper {
   height: 100vh;
   perspective: 50vh;
