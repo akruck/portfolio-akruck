@@ -26,6 +26,43 @@
       }
       .text__wrapper {
         max-width: 360px;
+
+        .button {
+          &__scroll {
+            border-color: lighten($grey--dark, 8);
+            bottom: 48px;
+            opacity: 0;
+            position: fixed;
+            right: 24px;
+            z-index: 2;
+
+            transition: opacity 0.8s ease-in-out,
+                        bottom 0.8s ease-in-out;
+
+            @media (max-width: $breakpoint--xs) {
+              right: 12px;
+            }
+          }
+          &__rotate {
+            transform: rotate(0deg);
+            transition: transform 0.8s ease-in-out;
+          }
+        }
+        &.active {
+          .button {
+            &__scroll {
+              bottom: 24px;
+              opacity: 1;
+
+              @media (max-width: $breakpoint--xs) {
+                bottom: 12px;
+              }
+            }
+            &__rotate {
+              transform: rotate(180deg);
+            }
+          }
+        }
       }
     }
   }

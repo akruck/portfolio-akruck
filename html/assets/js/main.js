@@ -121,4 +121,13 @@ $(window).scroll(function(event) {
     }
   });
 
+  $(".text__wrapper").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("active");
+    } else {
+      el.removeClass("active");
+    }
+  });
+
 });

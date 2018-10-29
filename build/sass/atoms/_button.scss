@@ -44,4 +44,19 @@ a.button {
   &__invert {
     color: $skin;
   }
+  &__scroll {
+    border-radius: 50%;
+    line-height: 24px;
+    padding: 8px;
+
+    span {
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+
+      svg {
+        margin-right: 0;
+      }
+    }
+  }
 }
