@@ -9,6 +9,9 @@
     &--rotate {
       margin-left: calc((50vw - (#{$content-width--xl} / 2)) * -1);
 
+      @media (min-width: 1940px) {
+        margin-left: calc((50vw - (64vw / 2)) * -1);
+      }
       @media (max-width: $breakpoint--lg) {
         margin-left: calc((50vw - (#{$content-width--lg} / 2)) * -1);
       }
