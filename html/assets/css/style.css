@@ -359,18 +359,20 @@ h3 {
 
 .navbar {
   position: fixed;
-  top: 0;
+  top: -48px;
   z-index: 2;
-  left: 0; }
+  left: 0;
+  transition: top 0.8s ease-in-out; }
   .navbar .navbar__bg svg {
-    fill: rgba(78, 84, 87, 0.64);
-    stroke: #8A837D;
+    fill: rgba(32, 30, 34, 0.48);
+    stroke: #4E5457;
     stroke-width: 1;
     position: fixed;
-    top: -2px;
+    top: -50px;
     right: 33.333334vw;
     height: 42px;
-    z-index: 0; }
+    z-index: 0;
+    transition: top 0.8s ease-in-out; }
   .navbar__toggler {
     display: none; }
   .navbar__collapse {
@@ -381,16 +383,23 @@ h3 {
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding-left: 12px;
+    list-style: none;
     margin: 0;
-    list-style: none; }
+    padding-left: 12px; }
     .navbar__nav .nav__item a {
       display: inline-block;
-      color: #C1A991;
+      color: #8A837D;
+      font-size: 14px;
       line-height: 24px;
+      text-transform: uppercase;
       text-decoration: none;
       padding: 8px 12px;
       z-index: 1; }
+
+.loaded .navbar {
+  top: 0px; }
+  .loaded .navbar .navbar__bg svg {
+    top: -2px; }
 
 .device__wrapper {
   height: 100vh;
