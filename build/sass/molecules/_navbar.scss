@@ -11,6 +11,7 @@
   @media (max-width: $breakpoint--sm) {
     left: auto;
     right: 0;
+    z-index: 5;
   }
 
   transition: top 0.8s ease-in-out;
@@ -41,6 +42,8 @@
     margin-top: 12px;
     margin-right: 10px;
     padding: 13px 10px;
+    position: relative;
+    z-index: 4;
 
     @media (max-width: $breakpoint--sm) {
       display: block;
@@ -61,7 +64,21 @@
     z-index: 3;
 
     @media (max-width: $breakpoint--sm) {
-      display: none;
+      background-color: $grey--darker;
+      height: 100vh;
+      left: 100vw;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+
+      transition: left 0.4s ease-in-out;
+    }
+    &--open {
+      left: 33.3vw;
+
+      .navbar__close-area {
+        display: block;
+      }
     }
   }
   &__nav {
@@ -72,6 +89,13 @@
     list-style: none;
     margin: 0;
     padding-left: 12px;
+
+    @media (max-width: $breakpoint--sm) {
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 0;
+      padding-top: 64px;
+    }
 
     .nav {
       &__item {
@@ -84,8 +108,26 @@
           text-decoration: none;
           padding: 8px 12px;
           z-index: 1;
+
+          @media (max-width: $breakpoint--sm) {
+            display: block;
+            padding-left: 24px;
+            padding-right: 24px;
+          }
         }
       }
+    }
+  }
+  &__close-area {
+    display: none;
+
+    @media (max-width: $breakpoint--sm) {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 33.33vw;
     }
   }
 }

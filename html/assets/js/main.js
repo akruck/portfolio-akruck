@@ -131,3 +131,17 @@ $(window).scroll(function(event) {
   });
 
 });
+
+
+// ---------- ---------- ---------- ---------- ----------
+// Open Menu
+// ---------- ---------- ---------- ---------- ----------
+
+$(function() {
+  $("button.navbar__toggler").click(function() {
+		$('#navbar__menu__nav').toggleClass("navbar__collapse--open");
+ });
+ $(".navbar__close-area").click(function() {
+   $('#navbar__menu__nav').removeClass("navbar__collapse--open");
+ });
+});
