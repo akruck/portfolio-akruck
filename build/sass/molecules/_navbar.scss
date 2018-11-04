@@ -10,17 +10,43 @@
 
   .navbar__bg {
     svg {
-      fill: rgba($grey--darker, 0.9);
-      // stroke: $sand;
+      fill: rgba($grey--dark, 0.64);
+      stroke: $grey;
       stroke-width: 1;
       position: fixed;
       top: -2px;
       right: 33.333334vw;
       height: 42px;
+      z-index: 0;
     }
   }
+  &__toggler {
+    display: none;
+  }
+  &__collapse {
+    position: relative;
+    z-index: 3;
+  }
   &__nav {
-    line-height: 24px;
-    padding: 8px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 12px;
+    margin: 0;
+    list-style: none;
+
+    .nav {
+      &__item {
+        a {
+          display: inline-block;
+          color: $sand;
+          line-height: 24px;
+          text-decoration: none;
+          padding: 8px 12px;
+          z-index: 1;
+        }
+      }
+    }
   }
 }
