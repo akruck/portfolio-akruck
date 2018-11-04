@@ -39,7 +39,12 @@
             transition: opacity 0.8s ease-in-out,
                         bottom 0.8s ease-in-out;
 
+            @media (max-width: $breakpoint--sm) {
+              left: auto;
+              right: 24px;
+            }
             @media (max-width: $breakpoint--xs) {
+              left: auto;
               right: 12px;
             }
           }
