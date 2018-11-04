@@ -140,8 +140,10 @@ $(window).scroll(function(event) {
 $(function() {
   $("button.navbar__toggler").click(function() {
 		$('#navbar__menu__nav').toggleClass("navbar__collapse--open");
+    $(this).toggleClass("navbar__toggler--open");
  });
  $(".navbar__close-area").click(function() {
    $('#navbar__menu__nav').removeClass("navbar__collapse--open");
+   $('button.navbar__toggler').removeClass("navbar__toggler--open");
  });
 });
