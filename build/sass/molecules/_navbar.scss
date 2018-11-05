@@ -8,6 +8,10 @@
   z-index: 2;
   left: 0;
 
+  @media (min-width: 1940px) {
+    top: -4.8vh;
+  }
+
   @media (max-width: $breakpoint--sm) {
     left: auto;
     right: 0;
@@ -28,6 +32,11 @@
       z-index: 0;
 
       transition: top 0.8s ease-in-out;
+
+      @media (min-width: 1940px) {
+        top: -5vh;
+        height: 4.2vh;
+      }
 
       @media (max-width: $breakpoint--sm) {
         display: none;
@@ -145,6 +154,10 @@
     margin: 0;
     padding-left: 12px;
 
+    @media (min-width: 1940px) {
+      padding-left: 1.2vh;
+    }
+
     @media (max-width: $breakpoint--sm) {
       -ms-flex-direction: column;
       flex-direction: column;
@@ -164,6 +177,12 @@
           padding: 8px 12px;
           z-index: 1;
 
+          @media (min-width: 1940px) {
+            font-size: 1.4vh;
+            line-height: 2.4vh;
+            padding: 0.8vh 1.2vh;
+          }
+
           @media (max-width: $breakpoint--sm) {
             display: block;
             padding-left: 24px;
@@ -182,6 +201,10 @@
     .navbar__bg {
       svg {
         top: -2px;
+
+        @media (min-width: 1940px) {
+          top: -0.2vh;
+        }
       }
     }
   }
