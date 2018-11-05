@@ -326,8 +326,8 @@ h3 {
   transition: margin-top 0.8s ease-out, margin-left 0.8s ease-out; }
   @media (min-width: 1940px) {
     .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
-      margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 64px);
-      margin-left: -1.8vw; } }
+      margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 0vh);
+      margin-left: -2vw; } }
   @media (max-width: 1000px) {
     .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
       margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px);
@@ -363,8 +363,8 @@ h3 {
   margin-left: calc((((2000px - 100vw) / 2 ) * -1) + 12px); }
   @media (min-width: 1940px) {
     .loaded .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
-      margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 64px);
-      margin-left: -1.8vw; } }
+      margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 2.4vh);
+      margin-left: -1.7vw; } }
   @media (max-width: 1000px) {
     .loaded .slide.slide-01--landing .bg-animation__wrapper .gate-dark--top svg {
       margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 120px);

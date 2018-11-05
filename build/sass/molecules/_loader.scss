@@ -97,8 +97,8 @@
               margin-left: calc((((2000px - 100vw) / 2 ) * -1));
 
               @media (min-width: 1940px) {
-                margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 64px);
-                margin-left: -1.8vw;
+                margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 0vh);
+                margin-left: -2vw;
               }
               @media (max-width: 1000px) {
                 margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 80px);
@@ -168,8 +168,8 @@
                 margin-left: calc((((2000px - 100vw) / 2 ) * -1) + 12px);
 
                 @media (min-width: 1940px) {
-                  margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 64px);
-                  margin-left: -1.8vw;
+                  margin-top: calc((((104vw - 100vh) / 2 ) * -1) - 2.4vh);
+                  margin-left: -1.7vw;
                 }
                 @media (max-width: 1000px) {
                   margin-top: calc((((2000px - 100vh) / 2 ) * -1) - 120px);
