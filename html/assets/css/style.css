@@ -537,7 +537,7 @@ h3 {
         flex-direction: column;
         padding-left: 0;
         padding-top: 64px; } }
-    .navbar__nav .nav__item a {
+    .navbar__nav .nav__link {
       display: inline-block;
       color: #8A837D;
       font-size: 14px;
@@ -547,15 +547,17 @@ h3 {
       padding: 8px 12px;
       z-index: 1; }
       @media (min-width: 1940px) {
-        .navbar__nav .nav__item a {
+        .navbar__nav .nav__link {
           font-size: 1.4vh;
           line-height: 2.4vh;
           padding: 0.8vh 1.2vh; } }
       @media (max-width: 768px) {
-        .navbar__nav .nav__item a {
+        .navbar__nav .nav__link {
           display: block;
           padding-left: 24px;
           padding-right: 24px; } }
+      .navbar__nav .nav__link--active {
+        color: #D9BDAD; }
 
 .loaded .navbar {
   top: 0px; }
