@@ -274,8 +274,8 @@ h3 {
   z-index: 1; }
   @media (min-width: 1940px) {
     .loader {
-      left: 63.5vw;
-      top: 66vh; } }
+      left: 61vw;
+      top: 56vh; } }
   @media (max-width: 1000px) {
     .loader {
       left: calc(50vw + 136px);
@@ -315,6 +315,11 @@ h3 {
     margin-left: -48px;
     transition: opacity 0.8s ease-out;
     transition-delay: 0.4s; }
+    @media (min-width: 1940px) {
+      .loader .btn-hexagon__arrow {
+        height: 9.6vh;
+        width: 9.6vh;
+        margin-left: -4.8vh; } }
     .loader .btn-hexagon__arrow--up {
       animation: pulse--top 2.4s;
       animation-timing-function: ease-in-out;
