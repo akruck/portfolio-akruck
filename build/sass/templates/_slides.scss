@@ -291,6 +291,7 @@
     .button {
       &--scroll-down {
         position: relative;
+        outline: none;
 
         @media (min-width: 1940px) {
           padding-left: 0;
