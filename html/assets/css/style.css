@@ -272,6 +272,10 @@ h3 {
   left: calc(50vw + 216px);
   top: calc(1048px - (2000px - 100vh) / 2);
   z-index: 1; }
+  @media (min-width: 1940px) {
+    .loader {
+      left: 63.5vw;
+      top: 66vh; } }
   @media (max-width: 1000px) {
     .loader {
       left: calc(50vw + 136px);
@@ -296,6 +300,10 @@ h3 {
     height: 208px;
     position: relative;
     width: 160px; }
+    @media (min-width: 1940px) {
+      .loader__wrapper {
+        height: 20.8vh;
+        width: 16vh; } }
     @media (max-width: 410px) and (max-aspect-ratio: 1 / 1) {
       .loader__wrapper {
         height: 128px; } }

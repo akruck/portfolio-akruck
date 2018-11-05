@@ -11,6 +11,10 @@
   top: calc(1048px - (2000px - 100vh) / 2);
   z-index: 1;
 
+  @media (min-width: 1940px) {
+    left: 63.5vw;
+    top: 66vh;
+  }
   @media (max-width: 1000px) {
     left: calc(50vw + 136px);
     top: calc(968px - (2000px - 100vh) / 2);
@@ -36,6 +40,11 @@
     height: 208px;
     position: relative;
     width: 160px;
+
+    @media (min-width: 1940px) {
+      height: 20.8vh;
+      width: 16vh;
+    }
 
     @media (max-width: 410px) and (max-aspect-ratio: 1/1) {
       height: 128px;
