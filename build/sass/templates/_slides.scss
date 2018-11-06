@@ -444,6 +444,9 @@
     &__body {
       background: linear-gradient(45deg, lighten($sand, 10%), white);
     }
+    &__display {
+      background-color: $grey--dark;
+    }
     &__shadow {
       box-shadow: 0 0 2vh 1vh rgba(darken($sand, 24%), 0.24);
       height: 1px;
