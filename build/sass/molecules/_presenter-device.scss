@@ -148,10 +148,10 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 
-    background-color:rgba($grey--darker, 0.48);
-    box-shadow: 0 0 2vh 1vh rgba($grey--darker, 0.48);
-    border-radius: 4vh;
-    height: 1vh;
+    background-color:rgba($grey--darker, 0.24);
+    box-shadow: 0 0 2vh 1vh rgba($grey--darker, 0.24);
+    border-radius: 50%;
+    height: 1px;
     left: 1vh;
     position: absolute;
     right: 1vh;
