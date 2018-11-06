@@ -40,6 +40,9 @@
     height: 208px;
     position: relative;
     width: 160px;
+    display: inline-block;
+
+    transition: height 0.8s 1s ease-out, width 0.8s 1s ease-out;
 
     @media (min-width: 1940px) {
       height: 20.8vh;
@@ -222,6 +225,11 @@
   }
 
   .loader {
+
+    &__wrapper {
+      height: 0;
+      width: 0;
+    }
     .btn-hexagon {
 
       &__arrow {
