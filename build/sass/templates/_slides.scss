@@ -379,3 +379,31 @@
     }
   }
 }
+
+
+// ---------- ---------- ---------- ---------- ----------
+//
+// Project page
+//
+// ---------- ---------- ---------- ---------- ----------
+
+.project__page {
+  .slide {
+    &--01 {
+      height: 0;
+
+    }
+    &-01--landing .bg-animation__wrapper .gate-dark--top svg {
+      fill: transparent;
+    }
+  }
+
+  // loaded
+  // ---------- ---------- ---------- ---------- ----------
+  &.loaded {
+    .slide-01--landing.slide .bg-animation__wrapper .gate-dark--top svg {
+      margin-top: calc((100vh + 2000px) * -1);
+      opacity: 0;
+    }
+  }
+}

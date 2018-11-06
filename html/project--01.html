@@ -42,7 +42,7 @@
 
 </head>
 
-<body>
+<body class="project__page">
 
 	<!-- loader animation -->
 	<span class="loader">
@@ -67,7 +67,7 @@
 			<!-- navbar bg svg -->
 			<div class="navbar__bg">
 				<svg id="navbar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4000 48">
-				  <path id="nav__bg" class="cls-1" d="M115.5,32.5,78.665,76.349A12.2,12.2,0,0,1,69.423,80.5H-3884.5v-48Z" transform="translate(3884.5 -32.5)"/>
+					<path id="nav__bg" class="cls-1" d="M115.5,32.5,78.665,76.349A12.2,12.2,0,0,1,69.423,80.5H-3884.5v-48Z" transform="translate(3884.5 -32.5)"/>
 				</svg>
 			</div>
 
@@ -82,10 +82,10 @@
 			<div id="navbar__menu__nav" class="collapse navbar__collapse">
 				<ul class="navbar__nav">
 					<li class="nav__item">
-						<a class="nav__link nav__link--active" href="#">Overview</a>
+						<a class="nav__link" href="index.html">Overview</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="#">Projects</a>
+						<a class="nav__link nav__link--active" href="#">Projects</a>
 					</li>
 					<li class="nav__item">
 						<a class="nav__link" href="#">Skills</a>
@@ -102,12 +102,47 @@
 		</nav>
 
 
-
 		<!-- ---------- ---------- ---------- ---------- ----------
-		slide 01
+		slide 01 landing
 		---------- ---------- ---------- ---------- ---------- -->
 
-		<div id="slide--01" class="slide slide--01">
+		<div id="slide--01" class="slide slide--01 slide-01--landing">
+
+			<!-- animation wrapper -->
+			<div class="bg-animation__wrapper">
+
+				<div class="gate-dark gate-dark--top">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 2000">
+						<defs>
+							<style>
+							.svg-clip-path {
+								clip-path: url(#clip-gate-dark_top);
+							}
+							.svg-transparent {
+								fill: transparent;
+							}
+							</style>
+							<clipPath id="clip-gate-dark_top">
+								<rect width="2000" height="2000"/>
+							</clipPath>
+						</defs>
+						<g id="gate-dark_top" data-name="gate-dark—top" class="svg-clip-path">
+							<rect class="svg-transparent" width="2000" height="2000"/>
+							<path id="Path_12" data-name="Path 12" d="M859.5,80.5H241.939a12.233,12.233,0,0,1-9.213-4.151l-33.236-39.7a12.2,12.2,0,0,0-9.242-4.151H121.064a12.216,12.216,0,0,0-9.242,4.151l-33.156,39.7A12.2,12.2,0,0,1,69.423,80.5H-1140.5v-1192h2000Z" transform="translate(1140.5 1111.5)"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- / animation wrapper -->
+
+		</div>
+
+
+		<!-- ---------- ---------- ---------- ---------- ----------
+		slide 02
+		---------- ---------- ---------- ---------- ---------- -->
+
+		<div id="slide--02" class="slide slide--02">
 			<div class="content__wrapper ">
 				<div class="content__area">
 					<div class="row">
@@ -117,7 +152,7 @@
 							<div class="device__wrapper device__wrapper--rotate d-flex align-items-center justify-content-center">
 
 								<!-- device -->
-								<div class="device__body">
+								<div class="device__body visible">
 										<div class="device__display">
 											<div class="device__image d-flex align-items-center">
 												<img src="assets/img/timocom/aurora-01-1024x768.jpg" alt="image-example-complexity">
@@ -142,7 +177,7 @@
 									challenge using Usability Engineering methods.
 								</p>
 								<div class="toolbar">
-									<a class="button button__outline button__invert">
+									<a href="project--01.html" class="button button__outline button__invert">
 
 										<span class="button__copy">Read more…</span>
 
@@ -179,242 +214,11 @@
 		</div>
 
 
-		<!-- ---------- ---------- ---------- ---------- ----------
-		slide 03
-		---------- ---------- ---------- ---------- ---------- -->
-
-		<div id="slide--03" class="slide slide--reverse slide--03">
-			<div class="content__wrapper">
-				<div class="content__area">
-					<div class="row">
-						<div class="col d-flex align-items-center justify-content-end">
-							<div class="text__wrapper text--light">
-								<h3 class="text--uppercase">Rentalcars.com — United Kingdom</h3>
-								<h1 class="text--uppercase">Conversion</h1>
-								<h2 class="text--uppercase">More BPD with minimal DEV support</h2>
-								<p>
-									Deep research to make it possible to generate more than
-									£1M/year when there is a productive crisis in the development team.
-								</p>
-								<div class="toolbar">
-									<a class="button button__outline button__invert">
-
-										<span class="button__copy">Read more…</span>
-
-										<span class="button__icon">
-											<!-- icon chevron down invert -->
-											<svg class="icon icon--invert icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
-													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
-												</g>
-											</svg>
-										</span>
-
-									</a>
-								</div>
-
-								<!-- button next slide -->
-								<button href="#slide--04" class="button button__outline button__invert button__scroll">
-									<span class="button__icon">
-										<!-- icon chevron down invert -->
-										<svg class="icon icon--invert icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-											<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
-												<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
-											</g>
-										</svg>
-									</span>
-								</button>
-								<!-- / button next slide -->
-
-							</div>
-						</div>
-
-						<div class="col">
-
-							<!-- device 3d rotated -->
-							<div class="device__wrapper device__wrapper--rotate-reverse d-flex align-items-center justify-content-center">
-
-								<!-- device -->
-								<div class="device__body">
-										<div class="device__display">
-											<div class="device__image d-flex align-items-center">
-												<video src="assets/img/rentalcars/rc-filter-ideas__03_01--landscape.mp4" controls="false" loop="true" autoplay="true">
-										      <p>Your browser doesn't support HTML5 video.</p>
-										    </video>
-											</div>
-										</div>
-
-										<!-- device shadow -->
-										<div class="device__shadow"></div>
-								</div>
-
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<!-- ---------- ---------- ---------- ---------- ----------
-		slide 04
-		---------- ---------- ---------- ---------- ---------- -->
-
-		<div id="slide--04" class="slide slide--04">
-			<div class="content__wrapper ">
-				<div class="content__area">
-					<div class="row">
-						<div class="col">
-
-							<!-- device 3d rotated -->
-							<div class="device__wrapper device__wrapper--rotate d-flex align-items-center justify-content-center">
-
-								<!-- device -->
-								<div class="device__body">
-										<div class="device__display">
-											<div class="device__image d-flex align-items-center">
-												<img src="assets/img/rentalcars/01_01-car_card-landing_page.png" alt="image-example-complexity">
-											</div>
-										</div>
-
-										<!-- device shadow -->
-										<div class="device__shadow"></div>
-								</div>
-
-
-							</div>
-
-						</div>
-						<div class="col d-flex align-items-center">
-							<div class="text__wrapper text--light">
-								<h3 class="text--uppercase">Rentalcars.com — United Kingdom</h3>
-								<h1 class="text--uppercase">Vision</h1>
-								<h2 class="text--uppercase">Cross UX Workshops</h2>
-								<p>
-									Colleagues from different departments are a great source to
-									generate brilliant ideas for an advanced user experience.
-								</p>
-								<div class="toolbar">
-									<a class="button button__outline button__invert">
-
-										<span class="button__copy">Read more…</span>
-
-										<span class="button__icon">
-											<!-- icon chevron down invert -->
-											<svg class="icon icon--invert icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
-													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
-												</g>
-											</svg>
-										</span>
-
-									</a>
-								</div>
-
-								<!-- button next slide -->
-								<button href="#slide--05" class="button button__outline button__invert button__scroll">
-									<span class="button__icon">
-										<!-- icon chevron down invert -->
-										<svg class="icon icon--invert icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-											<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
-												<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
-											</g>
-										</svg>
-									</span>
-								</button>
-								<!-- / button next slide -->
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<!-- ---------- ---------- ---------- ---------- ----------
-		slide 05
-		---------- ---------- ---------- ---------- ---------- -->
-
-		<div id="slide--05" class="slide slide--reverse slide--03">
-			<div class="content__wrapper">
-				<div class="content__area">
-					<div class="row">
-						<div class="col d-flex align-items-center justify-content-end">
-							<div class="text__wrapper text--light">
-								<h3 class="text--uppercase">Maginus — United Kingdom</h3>
-								<h1 class="text--uppercase">eCommerce</h1>
-								<h2 class="text--uppercase">Close the gap between Development and Design</h2>
-								<p>
-									Closing the gap between development and design leads to a
-									frictionless process that creates greater products faster.
-								</p>
-								<div class="toolbar">
-									<a class="button button__outline button__invert">
-
-										<span class="button__copy">Read more…</span>
-
-										<span class="button__icon">
-											<!-- icon chevron down invert -->
-											<svg class="icon icon--invert icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-												<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
-													<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
-												</g>
-											</svg>
-										</span>
-
-									</a>
-								</div>
-
-								<!-- button top slide -->
-								<button href="#slide--01" class="button button__outline button__invert button__scroll button__rotate">
-									<span class="button__icon">
-										<!-- icon chevron down invert -->
-										<svg class="icon icon--invert icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-											<g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-164 -555)">
-												<path id="Path_14" data-name="Path 14" d="M80,180l13.6,10.2a4,4,0,0,0,4.8,0L112,180" transform="translate(92 393)"/>
-											</g>
-										</svg>
-									</span>
-								</button>
-								<!-- / button next slide -->
-
-							</div>
-						</div>
-
-						<div class="col">
-
-							<!-- device 3d rotated -->
-							<div class="device__wrapper device__wrapper--rotate-reverse d-flex align-items-center justify-content-center">
-
-								<!-- device -->
-								<div class="device__body">
-										<div class="device__display">
-											<div class="device__image d-flex align-items-center">
-												<img src="assets/img/maginus/01_02-start-page.jpg" alt="image-example-complexity">
-											</div>
-										</div>
-
-										<!-- device shadow -->
-										<div class="device__shadow"></div>
-								</div>
-
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 	</main>
 	<!-- ---------- ---------- ---------- ---------- ----------
 	/ main
 	---------- ---------- ---------- ---------- ---------- -->
 
-</body>
+	</body>
 
-</html>
+	</html>
