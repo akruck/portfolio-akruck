@@ -19,6 +19,8 @@ var $ = {
  sass: require('gulp-sass'),
 }
 
+var sourcemaps = require('gulp-sourcemaps');
+
 // var to create svg sprite
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
@@ -86,9 +88,11 @@ gulp.task('default', ['serve']);
 // Compile sass files
 gulp.task('sass', function() {
  gulp.src(paths.sass.src)
+  .pipe(sourcemaps.init())
   .pipe($.sass({
    includePaths: [paths.sass.src]
   }).on('error', $.sass.logError))
+  .pipe(sourcemaps.write())
   .pipe(gulp.dest(paths.sass.dest))
   .pipe(browserSync.stream());
 });
