@@ -130,15 +130,15 @@
     @media (max-width: $breakpoint--sm) {
       background-color: $grey--darker;
       height: 100vh;
-      left: 100vw;
+      right: -66vw;
       position: fixed;
       top: 0;
-      width: 100vw;
+      width: 66vw;
 
-      transition: left 0.8s ease-in-out;
+      transition: right 0.8s ease-in-out;
     }
     &--open {
-      left: 33.3vw;
+      right: 0;
 
       .navbar__close-area {
         left: 0;

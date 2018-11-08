@@ -407,6 +407,16 @@
         }
       }
     }
+    &__collapse {
+      @media (max-width: $breakpoint--sm) {
+        background: linear-gradient(45deg, lighten($sand, 8%), $skin--light);
+      }
+    }
+    &__close-area {
+      @media (max-width: $breakpoint--sm) {
+        background-color: rgba(lighten($sand, 20%), 0.64);
+      }
+    }
   }
 
   // ---------- ---------- ---------- ---------- ----------
