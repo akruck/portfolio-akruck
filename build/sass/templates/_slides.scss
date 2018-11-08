@@ -441,6 +441,24 @@
       background: linear-gradient(45deg, lighten( $sand, 6% ), white);
       transition: opacity 0.8s ease-in-out;
     }
+
+
+    // ---------- ---------- ---------- ---------- ----------
+    // slide 03
+    // ---------- ---------- ---------- ---------- ----------
+
+    &--03 {
+      background: linear-gradient(135deg, lighten( $sand, 6% ), white);
+
+      h1 {
+        color: $orange--dark;
+      }
+      .device {
+        &__body {
+        border: 1px solid rgba($orange--dark, 0.64);
+        }
+      }
+    }
     .content__area .text__wrapper {
       max-width: none;
     }
