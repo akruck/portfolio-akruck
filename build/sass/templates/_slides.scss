@@ -427,12 +427,6 @@
     &--01 {
       background: linear-gradient(45deg, lighten($sand, 8%), $skin--light);
       transition: height 0.8s 0.8s ease-in-out;
-
-      .btn-hexagon {
-        &__arrow {
-          stroke: $sand;
-        }
-      }
     }
     &-01--landing .bg-animation__wrapper .gate-dark--top svg {
       fill: transparent;
@@ -449,6 +443,13 @@
     }
     .content__area .text__wrapper {
       max-width: none;
+    }
+  }
+
+  // loader button hexagon
+  .btn-hexagon {
+    &__arrow {
+      stroke: $sand;
     }
   }
 
