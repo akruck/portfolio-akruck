@@ -436,6 +436,7 @@
     }
     &-01--landing .bg-animation__wrapper .gate-dark--top svg {
       fill: transparent;
+      filter: drop-shadow(0 0 0 transparent);
     }
 
     // slide 02
