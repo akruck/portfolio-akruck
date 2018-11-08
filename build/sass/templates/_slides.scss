@@ -37,16 +37,12 @@
             bottom: 48px;
             opacity: 0;
             position: fixed;
-            left: 24px;
+            right: 24px;
             z-index: 2;
 
             transition: opacity 0.8s ease-in-out,
                         bottom 0.8s ease-in-out;
 
-            @media (max-width: $breakpoint--sm) {
-              left: auto;
-              right: 24px;
-            }
             @media (max-width: $breakpoint--xs) {
               left: auto;
               right: 12px;
@@ -431,8 +427,11 @@
 
     &--02 {
       opacity: 0;
-      background: linear-gradient(45deg, darken( $sand, 7.2% ), white);
+      background: linear-gradient(45deg, lighten( $sand, 6% ), white);
       transition: opacity 0.8s ease-in-out;
+    }
+    .content__area .text__wrapper {
+      max-width: none;
     }
   }
 
@@ -442,7 +441,7 @@
 
   .device {
     &__body {
-      background: linear-gradient(45deg, lighten($sand, 10%), white);
+      background: linear-gradient(45deg, lighten($sand, 16%), white);
     }
     &__display {
       background-color: $grey--dark;

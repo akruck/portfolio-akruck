@@ -59,8 +59,8 @@
     }
   }
   &__toggler {
-    background-color: rgba($grey--dark, 0.24);
-    border: 1px solid $grey--dark;
+    background-color: transparent;
+    border: none;
     border-radius: 50%;
     display: none;
     margin-top: 12px;
