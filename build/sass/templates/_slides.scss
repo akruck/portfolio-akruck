@@ -425,8 +425,14 @@
 
   .slide {
     &--01 {
-      background: linear-gradient(45deg, $grey--dark, darken( $sand, 7.2% ));
+      background: linear-gradient(45deg, lighten($sand, 8%), $skin--light);
       transition: height 0.8s 0.8s ease-in-out;
+
+      .btn-hexagon {
+        &__arrow {
+          stroke: $sand;
+        }
+      }
     }
     &-01--landing .bg-animation__wrapper .gate-dark--top svg {
       fill: transparent;
