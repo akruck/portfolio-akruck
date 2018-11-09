@@ -123,6 +123,7 @@
     }
 
     background: linear-gradient(48deg, $grey--darker, $grey--dark);
+    border: 1px solid $grey;
     border-radius: 1.2vh;
     display: inline-block;
     padding: 2vh 2vh;
@@ -166,5 +167,17 @@
     left: 1vh;
     position: absolute;
     right: 1vh;
+  }
+  // helper classes {
+  &__border--purple-red {
+    border-color: $purple-red;
+  }
+  &__border--apple-green {
+    border-color: $apple-green;
+  }
+  &__border--orange--dark {
+    border-color: $orange--dark;
+  }
+  &__border--sand {
   }
 }

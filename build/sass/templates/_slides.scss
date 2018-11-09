@@ -311,15 +311,6 @@
 
   &--02 {
     background: linear-gradient(45deg, $grey--darker, $grey--dark);
-
-    h1 {
-      color: $orange--dark;
-    }
-    .device {
-      &__body {
-      border: 1px solid rgba($orange--dark, 0.64);
-      }
-    }
   }
 
 
@@ -329,15 +320,6 @@
 
   &--03 {
     background: linear-gradient(135deg, $grey--darker, $grey--dark);
-
-    h1 {
-      color: $apple-green;
-    }
-    .device {
-      &__body {
-      border: 1px solid rgba($apple-green, 0.64);
-      }
-    }
   }
 
 
@@ -347,15 +329,6 @@
 
   &--04 {
     background: linear-gradient(45deg, $grey--darker, $grey--dark);
-
-    h1 {
-      color: $orange--dark;
-    }
-    .device {
-      &__body {
-      border: 1px solid rgba($orange--dark, 0.64);
-      }
-    }
   }
 
   // ---------- ---------- ---------- ---------- ----------
@@ -364,15 +337,6 @@
 
   &--05 {
     background: linear-gradient(135deg, $grey--darker, $grey--dark);
-
-    h1 {
-      color: $apple-green;
-    }
-    .device {
-      &__body {
-      border: 1px solid rgba($apple-green, 0.64);
-      }
-    }
   }
 }
 
