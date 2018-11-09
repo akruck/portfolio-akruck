@@ -331,7 +331,7 @@
 
   .navbar {
     .navbar__bg svg {
-      fill: rgba($sand, 0.24);
+      fill: rgba(darken($sand, 16%), 0.24);
       stroke: transparent;
     }
     &__nav {
@@ -345,22 +345,22 @@
     }
     &__collapse {
       @media (max-width: $breakpoint--sm) {
-        background: linear-gradient(45deg, lighten($sand, 8%), $skin--light);
+        background: linear-gradient(135deg, lighten($sand, 8%), darken($sand, 8%));
       }
     }
     &__close-area {
       @media (max-width: $breakpoint--sm) {
-        background-color: rgba(lighten($sand, 20%), 0.64);
+        background-color: rgba(darken($sand, 20%), 0.64);
       }
     }
   }
 
   .button {
     &__scroll {
-      border-color: $sand;
+      border-color: $grey;
 
       svg {
-        stroke: $sand;
+        stroke: $grey;
       }
     }
   }
@@ -371,16 +371,22 @@
 
   .slide {
 
+    &:nth-child(2n+1) {
+      background: linear-gradient(135deg, lighten($sand, 8%), darken($sand, 8%));
+    }
+    &:nth-child(2n) {
+      background: linear-gradient(45deg, lighten($sand, 8%), darken($sand, 8%));
+    }
+
     .content__area .text__wrapper {
       .button {
         &__scroll {
-          border-color: $sand;
+          border-color: $grey;
         }
       }
     }
 
     &--01 {
-      background: linear-gradient(45deg, lighten($sand, 8%), $skin--light);
       transition: height 0.8s 0.8s ease-in-out;
     }
     &-01--landing .bg-animation__wrapper .gate-dark--top svg {
@@ -393,7 +399,6 @@
 
     &--02 {
       opacity: 0;
-      background: linear-gradient(45deg, lighten( $sand, 6% ), white);
       transition: opacity 0.8s ease-in-out;
     }
 
@@ -402,9 +407,6 @@
     // slide 03
     // ---------- ---------- ---------- ---------- ----------
 
-    &--03 {
-      background: linear-gradient(135deg, lighten( $sand, 6% ), white);
-    }
     .content__area .text__wrapper {
       max-width: none;
     }
