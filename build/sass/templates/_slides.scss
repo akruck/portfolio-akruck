@@ -419,11 +419,30 @@
     }
   }
 
+  .button {
+    &__scroll {
+      border-color: $sand;
+
+      svg {
+        stroke: $sand;
+      }
+    }
+  }
+
   // ---------- ---------- ---------- ---------- ----------
   // slide
   // ---------- ---------- ---------- ---------- ----------
 
   .slide {
+
+    .content__area .text__wrapper {
+      .button {
+        &__scroll {
+          border-color: $sand;
+        }
+      }
+    }
+
     &--01 {
       background: linear-gradient(45deg, lighten($sand, 8%), $skin--light);
       transition: height 0.8s 0.8s ease-in-out;
