@@ -4,14 +4,20 @@
 
 .slide {
 
-
   // ---------- ---------- ---------- ---------- ----------
   // general slide styles
   // ---------- ---------- ---------- ---------- ----------
 
+
   display: block;
   height: 100vh;
   width: 100vw;
+  &:nth-child(2n+1) {
+    background: linear-gradient(135deg, $grey--darker, $grey--dark);
+  }
+  &:nth-child(2n) {
+    background: linear-gradient(45deg, $grey--darker, $grey--dark);
+  }
 
   .content {
     &__area {
@@ -304,40 +310,6 @@
       }
     }
   }
-
-  // ---------- ---------- ---------- ---------- ----------
-  // slide 02
-  // ---------- ---------- ---------- ---------- ----------
-
-  &--02 {
-    background: linear-gradient(45deg, $grey--darker, $grey--dark);
-  }
-
-
-  // ---------- ---------- ---------- ---------- ----------
-  // slide 03
-  // ---------- ---------- ---------- ---------- ----------
-
-  &--03 {
-    background: linear-gradient(135deg, $grey--darker, $grey--dark);
-  }
-
-
-  // ---------- ---------- ---------- ---------- ----------
-  // slide 04
-  // ---------- ---------- ---------- ---------- ----------
-
-  &--04 {
-    background: linear-gradient(45deg, $grey--darker, $grey--dark);
-  }
-
-  // ---------- ---------- ---------- ---------- ----------
-  // slide 02
-  // ---------- ---------- ---------- ---------- ----------
-
-  &--05 {
-    background: linear-gradient(135deg, $grey--darker, $grey--dark);
-  }
 }
 
 
@@ -432,15 +404,6 @@
 
     &--03 {
       background: linear-gradient(135deg, lighten( $sand, 6% ), white);
-
-      h1 {
-        color: $orange--dark;
-      }
-      .device {
-        &__body {
-        border: 1px solid rgba($orange--dark, 0.64);
-        }
-      }
     }
     .content__area .text__wrapper {
       max-width: none;
