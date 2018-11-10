@@ -37,7 +37,7 @@
         .list--unordered {
 
           @media (max-width: $breakpoint--xs) {
-            max-height: 32vh;
+            max-height: 24vh;
             overflow-x: hidden;
             overflow-y: auto;
           }
