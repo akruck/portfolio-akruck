@@ -78,15 +78,14 @@
     }
   }
 
-  &--reverse {
+  &:nth-child(2n) {
     .content {
       &__area {
 
         > .row {
-
-          @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
-            -ms-flex-direction: column-reverse!important;
-            flex-direction: column-reverse!important;
+          @media (min-width: $breakpoint--sm) {
+            -ms-flex-direction: row-reverse!important;
+            flex-direction: row-reverse!important;
           }
         }
       }

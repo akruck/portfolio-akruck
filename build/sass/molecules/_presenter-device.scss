@@ -5,105 +5,6 @@
 .device {
   &__wrapper {
     height: 100vh;
-
-    &--rotate {
-      margin-left: calc((50vw - (#{$content-width--xl} / 2)) * -1);
-
-      @media (min-width: 1940px) {
-        margin-left: calc((50vw - (64vw / 2)) * -1);
-      }
-      @media (max-width: $breakpoint--lg) {
-        margin-left: calc((50vw - (#{$content-width--lg} / 2)) * -1);
-      }
-      @media (max-width: $breakpoint--md) {
-        margin-left: calc((50vw - (#{$content-width--md} / 2)) * -1);
-      }
-      @media (max-width: $breakpoint--sm) {
-        margin-left: calc((50vw - (#{$content-width--sm} / 2)) * -1);
-      }
-      @media (max-width: $breakpoint--xs) {
-        margin-left: calc((50vw - (#{$content-width--xs} / 2)) * -1);
-      }
-
-      .device {
-
-        &__body {
-          margin-left: 4.8vw;
-
-          transform:          rotateY(0deg);
-          -webkit-transform:  rotateY(0deg);
-          transform-style: flat;
-
-          transition: transform 1s ease-in-out, margin-left 1s ease-in-out;
-
-          &.visible {
-            transform:          rotateY(10deg);
-            -webkit-transform:  rotateY(10deg);
-            transform-style: flat;
-          }
-          &:hover {
-            transform:          rotateY(0deg);
-            -webkit-transform:  rotateY(0deg);
-            transform-style: flat;
-            transform:          scale(1.4);
-            margin-left: 0;
-          }
-        }
-      }
-
-      // reverse
-      // ---------- ---------- ---------- ---------- ----------
-
-      &-reverse {
-
-        margin-left: 0;
-        margin-right: calc((50vw - (#{$content-width--xl} / 2)) * -1);
-
-        @media (max-width: $breakpoint--lg) {
-          margin-left: 0;
-          margin-right: calc((50vw - (#{$content-width--lg} / 2)) * -1);
-        }
-        @media (max-width: $breakpoint--md) {
-          margin-left: 0;
-          margin-right: calc((50vw - (#{$content-width--md} / 2)) * -1);
-        }
-        @media (max-width: $breakpoint--sm) {
-          margin-left: 0;
-          margin-right: calc((50vw - (#{$content-width--sm} / 2)) * -1);
-        }
-        @media (max-width: $breakpoint--xs) {
-          margin-left: 0;
-          margin-right: calc((50vw - (#{$content-width--xs} / 2)) * -1);
-        }
-        .device__body {
-          margin-right: 4.8vw;
-
-          transform:          rotateY(0deg);
-          -webkit-transform:  rotateY(0deg);
-          transform-style: flat;
-
-          transition: transform 1s ease-in-out;
-
-          @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
-            margin-left: -8vw;
-          }
-
-          &.visible {
-            transform:          rotateY(-10deg);
-            -webkit-transform:  rotateY(-10deg);
-            transform-style: flat;
-          }
-          &:hover {
-            transform:          rotateY(0deg);
-            -webkit-transform:  rotateY(0deg);
-            transform-style: flat;
-            transform:          scale(1.4);
-
-          }
-        }
-      }
-    }
-
     perspective: 50vh;
     width: 50vw;
 
@@ -180,5 +81,113 @@
   }
   &__border--sand {
     border-color: $sand;
+  }
+}
+
+
+// rotate
+// ---------- ---------- ---------- ---------- ----------
+
+.slide {
+  &:nth-child(2n+1) {
+
+    .device__wrapper {
+      margin-left: calc((50vw - (#{$content-width--xl} / 2)) * -1);
+
+      @media (min-width: 1940px) {
+        margin-left: calc((50vw - (64vw / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--lg) {
+        margin-left: calc((50vw - (#{$content-width--lg} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--md) {
+        margin-left: calc((50vw - (#{$content-width--md} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--sm) {
+        margin-left: calc((50vw - (#{$content-width--sm} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--xs) {
+        margin-left: calc((50vw - (#{$content-width--xs} / 2)) * -1);
+      }
+
+      .device {
+
+        &__body {
+          margin-left: 4.8vw;
+
+          transform:          rotateY(0deg);
+          -webkit-transform:  rotateY(0deg);
+          transform-style: flat;
+
+          transition: transform 1s ease-in-out, margin-left 1s ease-in-out;
+
+          &.visible {
+            transform:          rotateY(10deg);
+            -webkit-transform:  rotateY(10deg);
+            transform-style: flat;
+          }
+          &:hover {
+            transform:          rotateY(0deg);
+            -webkit-transform:  rotateY(0deg);
+            transform-style: flat;
+            transform:          scale(1.4);
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-child(2n) {    
+
+    // reverse
+    .device__wrapper {
+
+      margin-left: 0;
+      margin-right: calc((50vw - (#{$content-width--xl} / 2)) * -1);
+
+      @media (max-width: $breakpoint--lg) {
+        margin-left: 0;
+        margin-right: calc((50vw - (#{$content-width--lg} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--md) {
+        margin-left: 0;
+        margin-right: calc((50vw - (#{$content-width--md} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--sm) {
+        margin-left: 0;
+        margin-right: calc((50vw - (#{$content-width--sm} / 2)) * -1);
+      }
+      @media (max-width: $breakpoint--xs) {
+        margin-left: 0;
+        margin-right: calc((50vw - (#{$content-width--xs} / 2)) * -1);
+      }
+      .device__body {
+        margin-right: 4.8vw;
+
+        transform:          rotateY(0deg);
+        -webkit-transform:  rotateY(0deg);
+        transform-style: flat;
+
+        transition: transform 1s ease-in-out;
+
+        @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+          margin-left: -8vw;
+        }
+
+        &.visible {
+          transform:          rotateY(-10deg);
+          -webkit-transform:  rotateY(-10deg);
+          transform-style: flat;
+        }
+        &:hover {
+          transform:          rotateY(0deg);
+          -webkit-transform:  rotateY(0deg);
+          transform-style: flat;
+          transform:          scale(1.4);
+
+        }
+      }
+    }
   }
 }
