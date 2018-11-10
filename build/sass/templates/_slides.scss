@@ -106,6 +106,22 @@
       }
     }
   }
+  &:nth-child(2n) {
+    .content {
+      &__area {
+
+        > .row {
+          > .col {
+            @media (min-width: $breakpoint--sm) {
+              -webkit-box-pack: end !important;
+              -ms-flex-pack: end !important;
+              justify-content: flex-end !important;
+            }
+          }
+        }
+      }
+    }
+  }
 
   h1 {
     margin-bottom: 24px;
@@ -363,7 +379,7 @@
 
   .slide {
     .content__area .text__wrapper {
-      max-width: none;
+      min-width: 420px;
     }
 
     &:nth-child(2n+1) {
