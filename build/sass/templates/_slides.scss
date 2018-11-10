@@ -12,6 +12,7 @@
   display: block;
   height: 100vh;
   width: 100vw;
+
   &:nth-child(2n+1) {
     background: linear-gradient(135deg, $grey--darker, $grey--dark);
   }
@@ -32,6 +33,20 @@
       }
       .text__wrapper {
         max-width: 360px;
+
+        .list--unordered {
+
+          @media (max-width: $breakpoint--xs) {
+            max-height: 32vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+          }
+          @media (min-width: $breakpoint--xs) and (max-width: $breakpoint--sm) {
+            max-height: 56vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+          }
+        }
 
         @media (min-width: 1940px) {
           max-width: 36vw;
@@ -83,7 +98,7 @@
       &__area {
 
         > .row {
-          @media (min-width: $breakpoint--sm) {
+          @media (min-width: $breakpoint--xs) {
             -ms-flex-direction: row-reverse!important;
             flex-direction: row-reverse!important;
           }
@@ -328,31 +343,6 @@
   // nav
   // ---------- ---------- ---------- ---------- ----------
 
-  .navbar {
-    .navbar__bg svg {
-      fill: rgba(darken($sand, 16%), 0.24);
-      stroke: transparent;
-    }
-    &__nav {
-      .nav {
-        &__link {
-          &--active {
-            color: $grey--darker;
-          }
-        }
-      }
-    }
-    &__collapse {
-      @media (max-width: $breakpoint--sm) {
-        background: linear-gradient(135deg, lighten($sand, 8%), darken($sand, 8%));
-      }
-    }
-    &__close-area {
-      @media (max-width: $breakpoint--sm) {
-        background-color: rgba(darken($sand, 20%), 0.64);
-      }
-    }
-  }
 
   .button {
     &__scroll {
@@ -369,20 +359,15 @@
   // ---------- ---------- ---------- ---------- ----------
 
   .slide {
+    .content__area .text__wrapper {
+      max-width: none;
+    }
 
     &:nth-child(2n+1) {
-      background: linear-gradient(135deg, lighten($sand, 8%), darken($sand, 8%));
+      background: linear-gradient(135deg, $orange--dark -48%, $grey--dark 24%, $grey--darker);
     }
     &:nth-child(2n) {
-      background: linear-gradient(45deg, lighten($sand, 8%), darken($sand, 8%));
-    }
-
-    .content__area .text__wrapper {
-      .button {
-        &__scroll {
-          border-color: $grey;
-        }
-      }
+      background: linear-gradient(45deg, $orange--dark -48%, $grey--dark 24%, $grey--darker);
     }
 
     &--01 {
@@ -396,44 +381,11 @@
     // slide 02
     // ---------- ---------- ---------- ---------- ----------
 
-    &--02 {
-      opacity: 0;
-      transition: opacity 0.8s ease-in-out;
+    &#slide--02 {
+      h1 {margin-bottom: 0}
+      .toolbar {margin-top: 0}
     }
 
-
-    // ---------- ---------- ---------- ---------- ----------
-    // slide 03
-    // ---------- ---------- ---------- ---------- ----------
-
-    .content__area .text__wrapper {
-      max-width: none;
-    }
-  }
-
-  // loader button hexagon
-  .btn-hexagon {
-    &__arrow {
-      stroke: $sand;
-    }
-  }
-
-  // ---------- ---------- ---------- ---------- ----------
-  // device
-  // ---------- ---------- ---------- ---------- ----------
-
-  .device {
-    &__body {
-      background: linear-gradient(45deg, lighten($sand, 16%), white);
-    }
-    &__display {
-      background-color: $grey--dark;
-    }
-    &__shadow {
-      box-shadow: 0 0 2vh 1vh rgba(darken($sand, 24%), 0.24);
-      height: 1px;
-      background-color: rgba(darken($sand, 24%), 0.24);
-    }
   }
 
   // ---------- ---------- ---------- ---------- ----------

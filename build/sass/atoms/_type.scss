@@ -89,22 +89,21 @@ h3 {
 }
 ul {
   &.list--unordered {
+    border-left: 1px solid $grey;
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
+    margin-left: 12px;
+    padding-left: 24px;
 
     li {
-      color: $grey;
-      list-style-type: circle;
+      list-style-type: none;
       margin-left: -2px;
       padding-bottom: 8px;
 
       @media (min-width: 1940px) {
         margin-left: -0.2vh;
         padding-bottom: 0.8vh;
-      }
-      > span {
-        color: $grey--darker;
       }
     }
   }
