@@ -348,6 +348,9 @@
     &__scroll {
       border-color: $grey;
 
+      @media (max-width: $breakpoint--sm) {
+        display: none;
+      }
       svg {
         stroke: $grey;
       }
