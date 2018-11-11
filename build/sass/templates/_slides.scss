@@ -396,6 +396,16 @@
       }
     }
   }
+  &--sand {
+    .slide {
+      &:nth-child(2n+1) {
+        background: linear-gradient(135deg, $sand -48%, $grey--dark 24%, $grey--darker);
+      }
+      &:nth-child(2n) {
+        background: linear-gradient(45deg, $sand -48%, $grey--dark 24%, $grey--darker);
+      }
+    }
+  }
 
   // ---------- ---------- ---------- ---------- ----------
   // slide
