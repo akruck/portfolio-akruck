@@ -379,7 +379,12 @@
 
   .slide {
     .content__area .text__wrapper {
-      min-width: 420px;
+      @media (min-width: $breakpoint--sm) {
+        min-width: 420px;
+      }
+      @media (max-width: $breakpoint--sm) {
+        max-width: none;
+      }
     }
 
     &:nth-child(2n+1) {
