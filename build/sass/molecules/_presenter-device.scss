@@ -41,6 +41,13 @@
       margin-top: 0;
       width: 64%;
     }
+    &--portrait {
+      width: 24vw;
+
+      @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
+        width: 48%;
+      }
+    }
   }
   &__display {
     background-color: $grey--darker;
@@ -138,7 +145,7 @@
     }
   }
 
-  &:nth-child(2n) {    
+  &:nth-child(2n) {
 
     // reverse
     .device__wrapper {
@@ -174,7 +181,6 @@
         @media (max-width: $breakpoint--xs) and (max-aspect-ratio: 1/1) {
           margin-left: -8vw;
         }
-
         &.visible {
           transform:          rotateY(-10deg);
           -webkit-transform:  rotateY(-10deg);
