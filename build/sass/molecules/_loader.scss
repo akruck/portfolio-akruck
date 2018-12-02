@@ -88,8 +88,8 @@
 
 // slides
 // ---------- ---------- ---------- ---------- ----------
-.slide.slide {
-  &--02, &--03, &--04 {
+.slide {
+  &:nth-child(n+3) {
     opacity: 0;
     display: none;
   }
@@ -165,11 +165,13 @@
 
 .loaded {
 
-  .slide.slide {
-    &--02, &--03, &--04, &--05 {
+  .slide {
+    &:nth-child(n+2) {
       opacity: 1;
       display: block;
     }
+  }
+  .slide.slide {
     &-01--landing {
 
       .bg-animation {
@@ -247,6 +249,18 @@
           animation-timing-function: ease-out;
           animation-iteration-count: 1;
           animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+  .slide--01 {
+    .content {
+      &__area {
+        .text__wrapper {
+          &.active {
+            bottom: 24px;
+            opacity: 1;
+          }
         }
       }
     }
